@@ -44,7 +44,7 @@ layout: true
 # Overview 
 
 <p style="text-align: center;">
-  <img style="height: 50vh;" src="images/permissioning-overview.png" />
+  <img style="height: 50vh;" src="images/permission-management/permissioning-overview.png" />
 </p>
 
 ---
@@ -582,5 +582,5 @@ Permissions are always assigned to Roles, never to individual Users
 # Summary 
 
 <p style="text-align: center;">
-  <img style="height: 50vh;" src="images/permissioning-overview.png" />
+  <img style="height: 50vh;" src="images/permission-management/permissioning-overview.png" />
 </p>
