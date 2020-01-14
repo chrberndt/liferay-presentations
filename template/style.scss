@@ -95,14 +95,55 @@ blockquote {
 
 .agenda {
 
-  ul {
-    padding: 0;
+  color: $text-light;
+
+  h1 {
+    background: linear-gradient(270deg, #0b63ce 0%, #134194 100%);
+    color: $text-light;
+    font-size: 4rem !important;
+    font-weight: 300;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 50%;
+
+    .inner {
+      clear: both;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .bottom-bar {
+    display: none;
+  }
+
+  .breadcrumbs {
+    display: none;
+    color: $text-light;
+  }
+
+  .items {
+    left: 50%;
+
+    ul {
+      margin: 0 0 0 50%;
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
   }
 
   li {
     color: $tertiary;
+    font-size: 1.75rem;
     list-style: none;
     margin-left: 1.25rem;
+    margin-bottom: .5rem;
 
     .active {
       color: $text-dark;
@@ -133,7 +174,7 @@ h3 .breadcrumbs {
   text-align: center;
   &, h1, h2 { color: $text-light; }
   h1 { 
-    font-size: 6rem;
+    font-size: 4rem !important;
     font-weight: 300;
     line-height: 1.2;
   }
