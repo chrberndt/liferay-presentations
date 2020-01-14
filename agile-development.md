@@ -50,11 +50,13 @@ layout: true
 
 # Agile Development: History
 
-*  
+* ...
 
 ---
 
-# Agile Development: Key Concepts
+# Agile Development
+
+## Key Concepts
 
 * Adaptive planning
 * Evolutionary development
@@ -65,8 +67,13 @@ layout: true
 
 # Scrum: Introduction
 
-* Agile process framework
-* Designed for teams of ten or fewer members
+## An agile process framework designed for teams of ten or fewer members
+
+* Sutherland / Schwaber 1995 (based on older research)
+* Schwaber and Beedle, _Agile Software Development with Scrum_, 2001
+* 2002: Scrum Alliance (Schwaber): _Certified Scrum_
+* 2009: scrum.org: _Professional Scrum_
+* 2009: _The Scrum Guide_ (latest revision November 2017)
 
 Source: https://en.wikipedia.org/wiki/Scrum_(software_development) 
 
