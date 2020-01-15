@@ -37,6 +37,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 { 
   color: $primary;
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+  margin-top: .75rem;
 }
 // h1 { color: $primary; }
 h2 { 
@@ -104,6 +106,7 @@ blockquote {
     font-weight: 300;
     height: 100%;
     left: 0;
+    margin-top: 0;
     position: absolute;
     text-align: center;
     top: 0;
@@ -157,6 +160,17 @@ blockquote {
         top: -.125rem;
       }
     }
+  }
+}
+
+.footnote {
+  bottom: 4rem;
+  font-size: 1rem;
+  position: absolute;
+
+  p {
+    margin-block-start: .5em;
+    margin-block-end: .5em;
   }
 }
 

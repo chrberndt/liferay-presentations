@@ -156,8 +156,11 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 ## Advantages
 
 * Find problems early in the development cycle
+* Facilitate refactoring and upgrades
 
-Source: https://en.wikipedia.org/wiki/Unit_testing
+.footnote[
+  Source: https://en.wikipedia.org/wiki/Unit_testing
+]
 
 ---
 
