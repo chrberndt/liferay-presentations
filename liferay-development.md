@@ -113,3 +113,16 @@ layout: true
 .footnote[
   Source: http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd
 ]
+
+---
+
+# Service Implementation
+
+## Development steps
+
+1. Define model in `service.xml`
+1. Run `buildService` task of the respective module
+1. Refresh the _liferay-workspace_ with `CTRL + F5`
+1. Inspect the generated classes and interfaces in the _-api_ and _-service_ modules
+1. Add or override _*LocalServiceImpl_, _*ServiceImpl_, and _*ModelImpl_ methods
+1. Re-run `buildService` in order to update the corresponding interfaces 
