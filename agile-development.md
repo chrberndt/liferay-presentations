@@ -115,16 +115,55 @@ layout: true
 
 ---
 
+# Testing Methodology
+
+## Introduction
+
+* Testing is an essential phase of any development methodology / project.
+
+---
+
+# Testing Methodology
+
+## Test Driven Development (TDD)
+
+* Frequently used in both extreme programming (XP) and Scrum
+* Unit tests are created before the code itself is written
+* When the tests pass, that code is considered complete
+
+Source: https://en.wikipedia.org/wiki/Unit_testing
+
+---
+
 # Testing Methodology 
+
+## Types of Tests
 
 * Unit Tests
 * Integration Tests 
-* ...
+* Acceptance Tests
+* Smoke Tests
+* Regression Tests
+
 ---
 
-# Unit Tests: Tools
+# Unit Tests
 
-*
+## Objective
+
+* Ensure that a section of an application (the "unit") meets its design and behaves as intended
+
+## Advantages
+
+* Find problems early in the development cycle
+
+Source: https://en.wikipedia.org/wiki/Unit_testing
+
+---
+
+# Unit Tests
+
+## Example
 
 ---
 
