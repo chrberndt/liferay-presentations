@@ -51,6 +51,16 @@ layout: true
 
 ---
 
+# Service Builder
+
+## Features
+
+* Object-Relational Mapping based on _Hibernate_
+* Caching with _EHCache_
+
+
+---
+
 # service.xml
 
 ## `<service-builder>` Attributes and Configuration Sections 
