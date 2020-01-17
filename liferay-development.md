@@ -128,11 +128,71 @@ layout: true
 
 # Service Implementation
 
-## Development steps
+## Development Steps
 
 1. Define model in `service.xml`
 1. Run `buildService` task of the respective module
 1. Refresh the _liferay-workspace_ with `CTRL + F5`
 1. Inspect the generated classes and interfaces in the _-api_ and _-service_ modules
 1. Add or override _*LocalServiceImpl_, _*ServiceImpl_, and _*ModelImpl_ methods
-1. Re-run `buildService` in order to update the corresponding interfaces 
+1. Re-run `buildService` task in order to update the corresponding interfaces
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Service- and Persistence-Layer
+1. .active[Testing]
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Testing]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Implement a Test Module
+
+## Auto-generate Persistence Tests
+
+1. Configure `testDir` in `build.gradle` of the _-service_ module
+
+  ```
+  buildService {
+    apiDir = "../liferay-todo-list-api/src/main/java"
+    testDir = "../liferay-todo-list-test/src/testIntegration/java"
+  }
+  ```
+1. Run the `buildService` task (this will generate the required _-test_ module directory)
+1. Configure the _-test_ module (`bnd.bnd` and `build.gradle`)
+1. Run `testIntegration` task (to be found in the _verification_ node)
+1. Inspect test results in _-test_ module `build/reports/tests/testIntegration/index.html`
+
+---
+
+# Implement a Test Module
+
+## Test Custom Methods
+
+1. ...
+
+---
+
+# Implement a Test Module
+
+## Mock Services and Objects
+
+1. TODO: investigate `@Mock` annotation
