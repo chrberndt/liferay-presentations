@@ -194,6 +194,16 @@ layout: true
 
 ---
 
+# Service Implementation
+
+## Naming Conventions
+
+* _**fetch**Entity()_: TODO
+* _**get**Entity()_: TODO
+
+
+---
+
 class: agenda
 
 # .inner[Agenda]
