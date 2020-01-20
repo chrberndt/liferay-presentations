@@ -20,6 +20,57 @@ class: agenda
 # .inner[Agenda]
 
 .items[
+1. .active[Liferay Workspace]
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Liferay Workspace]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Liferay Workspace
+
+## Introduction
+
+1. Gradle based project build
+
+---
+
+# Liferay Workspace
+
+## Target Platform configuration
+
+1. TODO
+
+---
+
+# Liferay Workspace
+
+## Tips and Tricks
+
+1. TODO: How do I determine the versions of a particular target platform (e.g. which JUnit version is used)?
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
 1. .active[Service- and Persistence-Layer]
 1. Testing
 1. Presentation Layer
@@ -144,6 +195,7 @@ class: agenda
 # .inner[Agenda]
 
 .items[
+1. Liferay Workspace
 1. Service- and Persistence-Layer
 1. .active[Testing]
 1. Presentation Layer
