@@ -237,6 +237,10 @@ layout: true
 1. Run `testIntegration` task (to be found in the _verification_ node)
 1. Inspect test results in _-test_ module `build/reports/tests/testIntegration/index.html`
 
+.footnote[
+  For dependencies configuration of `build.gradle` see: https://github.com/gamerson/liferay-workspace-test-dev/tree/master/modules/sample/sample-test
+]
+
 ---
 
 # Implement a Test Module
