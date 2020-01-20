@@ -55,6 +55,10 @@ layout: true
 
 1. TODO
 
+.footnote[
+  See: https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-target-platform
+]
+
 ---
 
 # Liferay Workspace
