@@ -26,6 +26,13 @@ class: agenda
 1. Presentation Layer
 1. Permission Framework
 1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+1. Export - Import
 ]
 
 ---
@@ -80,6 +87,12 @@ class: agenda
 1. Presentation Layer
 1. Permission Framework
 1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
 ]
 
 ---
@@ -215,6 +228,12 @@ class: agenda
 1. Presentation Layer
 1. Permission Framework
 1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
 ]
 
 ---
@@ -266,3 +285,268 @@ layout: true
 ## Mock Services and Objects
 
 1. TODO: investigate `@Mock` annotation
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. .active[Presentation Layer]
+1. Permission Framework
+1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Presentation Layer]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Presentation Layer
+
+## Available Technologies
+
+* JSP
+* JSF
+* React / Angular / Vue.js
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. .active[Permission Framework]
+1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Permission Framework]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. .active[Open API and REST]
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Open API and REST]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+1. .active[Asset Framework]
+1. Search
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Asset Framework]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+1. Asset Framework
+1. .active[Search]
+1. Managing User Associated Data (UAD)
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Search]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+1. Asset Framework
+1. Search
+1. .active[Managing User Associated Data (UAD)]
+1. Workflows
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Managing User Associated Data (UAD)]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Managing User Associated Data (UAD)
+
+## GDPR Requirements
+
+1. TODO
+1. TODO
+
+## UAD OOTB Features
+
+1. TODO
+1. TODO
+
+## Enable Service Builder Custom Components
+
+1. TODO
+1. TODO
+
+---
+
+# Managing User Associated Data (UAD)
+
+## Dependencies and Service Builder Configuration
+
+* TODO
+
+.footnote[
+  See: https://help.liferay.com/hc/en-us/articles/360029848451-Adding-the-UAD-Framework-to-a-Service-Builder-Application
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Liferay Workspace
+1. Service- and Persistence-Layer
+1. Testing
+1. Presentation Layer
+1. Permission Framework
+1. Open API and REST
+1. Asset Framework
+1. Search
+1. Managing User Associated Data (UAD)
+1. .active[Workflows]
+1. Trash
+1. Expando
+]
+
+---
+
+title: Development with Liferay
+layout: true
+
+###.breadcrumbs[Development with Liferay › Workflows]
+
+.bottom-bar[
+  {{title}}
+]
