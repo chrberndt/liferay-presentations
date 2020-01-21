@@ -15,17 +15,16 @@ christian.berndt@liferay.com
 
 ---
 
-###.breadcrumbs[Liferay Permission Management › Agenda]
+class:agenda
 
-# Liferay Permissions 
+# .inner[Liferay Permissions]
 
-## Agenda
-
-.agenda[
+.items[
 * .active[Overview]
 * Content Management
 * User Management
-* Permissions and Roles 
+* Permissions and Roles
+* Management Tasks
 ]
 
 ---
@@ -58,17 +57,16 @@ layout: true
 
 ---
 
-###.breadcrumbs[Liferay Permission Management › Agenda]
+class: agenda
 
-# Liferay Permissions 
+# .inner[Liferay Permissions]
 
-## Agenda
-
-.agenda[
+.items[
 * Overview
 * .active[Content Management]
 * User Management
 * Permissions and Roles 
+* Management Tasks
 ]
 
 ---
@@ -181,17 +179,16 @@ layout: true
 
 ---
 
-###.breadcrumbs[Liferay Permission Management › Agenda]
+class: agenda
 
-# Liferay Permissions 
+# .inner[Liferay Permissions]
 
-## Agenda
-
-.agenda[
+.items[
 * Overview
 * Content Management
 * .active[User Management]
 * Permissions and Roles 
+* Management Tasks
 ]
 
 ---
@@ -220,7 +217,7 @@ layout: true
 
 # User
 
-## A Person Engaging With the Liferay Platform
+## A Person (or System) Engaging With the Liferay Platform
 
 * A user can sign in to the portal 
 * Required for all permission-checking operations
@@ -279,17 +276,16 @@ layout: true
 
 ---
 
-###.breadcrumbs[Liferay Permission Management › Agenda]
+class: agenda
 
-# Liferay Permissions 
+# .inner[Liferay Permissions]
 
-## Agenda
-
-.agenda[
+.items[
 * Overview
 * Content Management
 * User Management
 * .active[Permissions and Roles]
+* Management Tasks
 ]
 
 ---
@@ -584,3 +580,74 @@ Permissions are always assigned to Roles, never to individual Users
 <p style="text-align: center;">
   <img style="height: 50vh;" src="images/permission-management/permissioning-overview.png" />
 </p>
+
+---
+
+class: agenda
+
+# .inner[Liferay Permissions]
+
+.items[
+* Overview
+* Content Management
+* User Management
+* Permissions and Roles
+* .active[Management Tasks]
+]
+
+---
+
+title: Liferay Permission Management
+layout: true
+
+###.breadcrumbs[Liferay Permission Management › Management Tasks]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Tasks Overview
+
+## Define Roles
+
+* Define Roles reflecting real world responsibilities (e.g. Copy Editor, Content Reviewer, etc.)
+* Grant required Permissions
+* Provide usage instructions in the description field
+
+## Assign Users
+
+* Individually
+* By means of User Groups
+* By means of Organizations
+* Programmatically
+
+---
+
+# Tasks Overview
+
+## Documentation
+
+* Describe typical Use Cases for each Role
+* What is a Role member allowed to do?
+* What is a Role member _not_ allowed to do?
+* How does the Role definition relate to related fields (User management, Workflow definitions, Sites)?
+
+---
+
+# Distribute and Deploy Custom Role Definitions
+
+## Deployment Tasks
+
+* Transfer custom Role definitions from _dev_ to _uat_ and _prod_
+
+## Deployment Options
+
+* Export - Import (via Control Panel)
+* Programmatically (by means of an OSGI Component)
+
+## Challenges
+
+* How to maintain / modify / update / extend custom Role definitions?
+* How to avoid conflicts between manual and programmatical Role management?
