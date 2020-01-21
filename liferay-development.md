@@ -255,7 +255,7 @@ layout: true
 
 1. Configure `testDir` in `build.gradle` of the _-service_ module
 
-  ```
+  ```groovy
   buildService {
     apiDir = "../liferay-todo-list-api/src/main/java"
     testDir = "../liferay-todo-list-test/src/testIntegration/java"
