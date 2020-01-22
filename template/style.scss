@@ -11,7 +11,8 @@ $light            : #FFF;
 $dark             : #333;
 $text-dark        : #212121; 
 $text-light       : $light;
-$code-background  : #F8F8F8;
+$code-background  : #EFEFEF;
+// $code-background  : #F8F8F8;
 $overlay          : transparentize(#000, .5);
 $font-size        : 28px;
 $font             : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
@@ -48,10 +49,13 @@ h2 {
 h3 { color: $tertiary; }
 li { margin-bottom: .25em; };
 pre, code {
-  text-align: left;
-  font-family: $font-fixed;
-  color: $secondary;
   background: $code-background;
+  border-radius: 4px;
+  color: $text-dark;
+  // color: $secondary;
+  font-family: $font-fixed;
+  padding: 2px 4px;
+  text-align: left;
 }
 a, a:visited, a:hover, a:active { color: $text-dark; }
 img { vertical-align: inherit; }
