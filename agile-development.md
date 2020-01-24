@@ -92,7 +92,7 @@ layout: true
 
 class: agenda
 
-# .inner[Agenda]
+# .inner[Agile Development with Liferay]
 
 .items[
 * Terms and Concepts
@@ -172,7 +172,7 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 
 class: agenda
 
-# .inner[Agenda]
+# .inner[Agile Development with Liferay]
 
 .items[
 * Terms and Concepts
@@ -204,7 +204,7 @@ layout: true
 
 class: agenda
 
-# .inner[Agenda]
+# .inner[Agile Development with Liferay]
 
 .items[
 * Terms and Concepts
@@ -235,7 +235,7 @@ layout: true
 
 class: agenda
 
-# .inner[Agenda]
+# .inner[Agile Development with Liferay]
 
 .items[
 * Terms and Concepts
@@ -262,3 +262,13 @@ layout: true
 
 * ...
   
+---
+
+class: agenda
+
+# .inner[Thank You!]
+
+.items[
+* christian.berndt@liferay.com
+* linkedin.com/in/mr-christian-berndt
+]
