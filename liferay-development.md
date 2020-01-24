@@ -63,7 +63,11 @@ layout: true
 1. TODO
 
 .footnote[
-  See: https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-target-platform
+  See:
+
+  https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-target-platform
+
+  https://liferay.dev/blogs/-/blogs/what-is-the-target-platform-
 ]
 
 ---
