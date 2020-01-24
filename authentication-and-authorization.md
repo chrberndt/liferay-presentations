@@ -27,7 +27,7 @@ class: agenda
 
 ---
 
-title: Authentication and Authorization 
+title: Authentication and Authorization
 layout: true
 
 ###.breadcrumbs[Authentication and Authorization › OAuth]
@@ -107,3 +107,34 @@ layout: true
 .footnote[
   Source: https://en.wikipedia.org/wiki/List_of_OAuth_providers
 ]
+
+---
+
+class: agenda
+
+# .inner[Authentication and Authorization]
+
+.items[
+1. OAuth
+1. .active[OpenID]
+1. SAML
+]
+
+---
+
+title: Authentication and Authorization
+layout: true
+
+###.breadcrumbs[Authentication and Authorization › OpenID]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# OpenID
+
+## Introduction
+
+* TODO
