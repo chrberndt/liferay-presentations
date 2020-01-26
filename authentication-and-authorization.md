@@ -55,9 +55,12 @@ layout: true
 
 # OAuth
 
-## An Example
+## An Example: Use GitHub Account to Login to Stack Overflow
 
 * TODO
+* ...
+* user:email scope
+* ...
 
 ---
 
