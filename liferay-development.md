@@ -78,6 +78,15 @@ layout: true
 
 1. TODO: How do I determine the versions of a particular target platform (e.g. which JUnit version is used)?
 
+
+## Fix JAVA_HOME issues in Developer Studio DXP on Windows
+
+1. `org.gradle.java.home=C:/Program Files/Java/your_jdk_version` - _Note the forward slashes on Windows._
+
+.footnote[
+  https://discuss.gradle.org/t/specifying-jre-in-eclipse-using-buildship-does-not-work/21474
+]
+
 ---
 
 class: agenda
