@@ -106,10 +106,10 @@ layout: true
 
 ## Introduction
 
-1. https://github.com/liferay/liferay-js-toolkit
-1. https://github.com/liferay/liferay-js-themes-toolkit
+1. liferay-js-themes-toolkit
 1. Gradle Theme Project
 1. Maven Theme Project
+1. liferay-js-toolkit
 
 ---
 
@@ -224,18 +224,103 @@ layout: true
 * __generator-liferay-theme__: A Yeoman generator for creating themes, themelets, and layout templates
 * __liferay-theme-tasks__: A set of Gulp tasks for building and deploying themes
 
+## Supported Node Version
+
+__10.15.1__ with Liferay __7.2.x__
 
 .footnote[
   https://github.com/liferay/liferay-js-themes-toolkit
+  https://github.com/liferay/liferay-js-themes-toolkit/issues/407
 ]
 
 ---
 
 # liferay-js-themes-toolkit
 
-## The `_unstyled` Theme
+## Install Liferay Locally
 
-* TODO
+1. Unpack the bundle
+1. Enable `developer-properties` in `$LIFERAY_HOME/portal-ext.properties`
+1. Startup Liferay with `$LIFERAY_HOME/$TOMCAT_HOME/bin/catalina.sh run`
+
+# liferay-js-themes-toolkit
+
+## Install Yeoman
+
+`sudo npm install -g yo`
+
+## Update Installed Generators with `yo`
+
+```
+berndt@x270$ yo
+? 'Allo Christian! What would you like to do?
+  Liferay Bundle
+  Liferay Js
+  ──────────────
+❯ Update your generators
+  Install a generator
+  Find some help
+  Get me out of here!
+(Move up and down to reveal more choices)
+```
+
+---
+
+# liferay-js-themes-toolkit
+
+## Create a Theme Project with `yo`
+
+```
+berndt@x270:git$ yo liferay-theme liferay-simple-theme
+
+
+Welcome to the splendid Themes SDK generator!
+
+
+ℹ️ This version of the Themes SDK (9.5.0) supports Liferay DXP
+and Portal CE from 7.2 to 7.3.
+
+For older versions, please use v8 of the toolkit:
+
+> npm install -g generator-liferay-theme@^8.0.0 ↩
+> yo liferay-theme:app ↩
+
+
+? What would you like to call your theme? Liferay Simple Theme
+? What id would you like to give to your theme? liferay-simple-theme
+? Which version of Liferay is this theme for? 7.2
+? Would you like to add Font Awesome to your theme? Yes
+ conflict .gitignore
+? Overwrite .gitignore? overwrite
+    force .gitignore
+   create gulpfile.js
+   create package.json
+   create src/WEB-INF/liferay-look-and-feel.xml
+   create src/WEB-INF/liferay-plugin-package.properties
+   create src/images/thumbnail.png
+   create src/css/_custom.scss
+
+```
+---
+
+# liferay-js-themes-toolkit
+
+## Create a Theme Project with `yo` (continued)
+
+```
+...
+✔️ The project has been created successfully.
+
+ℹ️ Now we will invoke gulp init for you, to configure your deployment
+strategy.
+
+Remember, that you can change your answers whenever you want by
+running gulp init again.
+
+? Select your deployment strategy Local App Server
+? Enter the path to your app server directory: /home/berndt/liferay-front-end-7.2.0.3/bundles/tomcat-9.0.17
+? Enter the url to your production or development site: http://localhost:8080
+```
 
 ---
 
