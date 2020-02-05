@@ -359,6 +359,47 @@ running gulp init again.
 ? Enter the path to your app server directory: /home/berndt/liferay-front-end-7.2.0.3/bundles/tomcat-9.0.17
 ? Enter the url to your production or development site: http://localhost:8080
 ```
+---
+
+# liferay-js-themes-toolkit
+
+## Anatomy of a Liferay Theme
+
+```
+liferay-simple-theme/
+├── .gitignore
+├── gulpfile.js
+├── LICENSE
+├── liferay-theme.json
+├── package.json
+├── package-lock.json
+├── README.md
+└── src
+    ├── css
+    │   └── _custom.scss
+    ├── images
+    │   └── thumbnail.png
+    └── WEB-INF
+        ├── liferay-look-and-feel.xml
+        └── liferay-plugin-package.properties
+```
+---
+
+# liferay-js-themes-toolkit
+
+## Gulp tasks
+
+* `build`
+* `deploy`
+* `extend`
+* `help`
+* `init`
+* `kickstart`
+* `overwrite`
+* `status`
+* `upgrade`
+* `watch`
+* For a complete list of tasks run `gulp help`
 
 ---
 
@@ -465,7 +506,14 @@ my-liferay-theme/
 
 # Using Javascript
 
+## Libraries Provided OOTB
 
+* jQuery (enabled in 7.2, disabled by default in 7.3.x, see note 1)
+* ...
+
+.footnote[
+  1) https://liferay.dev/blogs/-/blogs/jquery-is-disabled-long-live-jquery
+]
 
 
 ---
