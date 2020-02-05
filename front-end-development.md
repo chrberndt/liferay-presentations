@@ -572,6 +572,13 @@ my-liferay-theme/
 
 ---
 
+# Implement Responsive Markup
+
+## Key Sections of `portal_normal.ftl`
+
+
+---
+
 # Configure brand logo, fonts, and colors
 
 ##
