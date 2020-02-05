@@ -104,12 +104,12 @@ layout: true
 
 # Tools and Frameworks
 
-## Introduction
+## Overview
 
-1. liferay-js-themes-toolkit
-1. Gradle Theme Project
-1. Maven Theme Project
-1. liferay-js-toolkit
+* liferay-js-themes-toolkit
+* Gradle Theme Project
+* Maven Theme Project
+* liferay-js-toolkit
 
 ---
 
