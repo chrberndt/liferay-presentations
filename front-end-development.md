@@ -242,6 +242,7 @@ __10.15.1__ with Liferay __7.2.x__
 
 1. Unpack the bundle
 1. Enable `developer-properties` in `$LIFERAY_HOME/portal-ext.properties`
+1. Adjust `user.timezone` setting in `TOMCAT_HOME/bin/setenv.sh / .bat`
 1. Startup Liferay with `$LIFERAY_HOME/$TOMCAT_HOME/bin/catalina.sh run`
 1. Deploy the license file
 
