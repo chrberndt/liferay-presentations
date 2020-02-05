@@ -249,6 +249,40 @@ __10.15.1__ with Liferay __7.2.x__
 
 # liferay-js-themes-toolkit
 
+## portal-developer.properties
+
+```properties
+schema.module.build.auto.upgrade=true
+
+theme.css.fast.load=false
+theme.css.fast.load.check.request.parameter=true
+theme.images.fast.load=false
+theme.images.fast.load.check.request.parameter=true
+
+javascript.fast.load=true
+javascript.log.enabled=false
+
+layout.template.cache.enabled=false
+
+browser.launcher.url=
+
+combo.check.timestamp=true
+
+minifier.enabled=false
+
+module.framework.properties.initial.system.check.enabled=true
+module.framework.properties.osgi.console=localhost:11311
+
+com.liferay.portal.servlet.filters.cache.CacheFilter=false
+com.liferay.portal.servlet.filters.etag.ETagFilter=false
+com.liferay.portal.servlet.filters.header.HeaderFilter=false
+com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
+```
+
+---
+
+# liferay-js-themes-toolkit
+
 ## Install Yeoman
 
 `sudo npm install -g yo`
