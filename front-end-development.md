@@ -601,6 +601,23 @@ my-liferay-theme/
   1) https://liferay.dev/blogs/-/blogs/jquery-is-disabled-long-live-jquery
 ]
 
+---
+
+# Using Javascript
+
+## Libraries Provided OOTB
+
+```html
+<link charset="utf-8" data-senna-track="permanent" href="/o/frontend-theme-font-awesome-web/css/main.css" rel="stylesheet">
+<script data-senna-track="permanent" src="/combo?browserId=other&minifierType=js&languageId=en_US&b=7210&t=1580975323481&\
+  /o/frontend-js-jquery-web/jquery/jquery.min.js&\
+  /o/frontend-js-jquery-web/jquery/bootstrap.bundle.min.js&\
+  /o/frontend-js-jquery-web/jquery/collapsible_search.js&\
+  /o/frontend-js-jquery-web/jquery/fm.js&\
+  /o/frontend-js-jquery-web/jquery/form.js&\
+  /o/frontend-js-jquery-web/jquery/popper.min.js&\
+  /o/frontend-js-jquery-web/jquery/side_navigation.js" type="text/javascript"></script>
+```
 
 ---
 
