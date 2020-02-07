@@ -43,7 +43,8 @@ h1 {
 }
 // h1 { color: $primary; }
 h2 { 
-  color: $text-dark; 
+  color: $text-dark;
+  margin-bottom: .75rem;
 }
 // h2 { color: $secondary; }
 h3 { color: $tertiary; }
@@ -54,6 +55,7 @@ pre, code {
   color: $text-dark;
   // color: $secondary;
   font-family: $font-fixed;
+  font-size: 1.25rem;
   padding: 2px 4px;
   text-align: left;
 }
@@ -251,9 +253,13 @@ h3 .breadcrumbs {
 }
 
 pre {
-  margin: 0;
+  background: #efefef;
+  margin: 0 .25rem;
   .remark-code {
-    font-size: 0.5em;
+    font-size: .8rem;
+    &.hljs {
+      background: transparent;
+    }
   }
 }
 
