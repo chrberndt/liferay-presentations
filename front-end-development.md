@@ -288,7 +288,9 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 
 ## Install Yeoman
 
-`sudo npm install -g yo`
+```bash
+sudo npm install -g yo
+```
 
 ## Update Installed Generators with `yo`
 
@@ -366,7 +368,7 @@ running gulp init again.
 
 ## Anatomy of a Liferay Theme
 
-```
+```bash
 liferay-simple-theme/
 ├── .gitignore
 ├── gulpfile.js
@@ -409,7 +411,7 @@ liferay-simple-theme/
 .col-6[
 ## Theme Project Initialization
 
-```
+```bash
 blade create -t theme -v 7.2 my-liferay-theme
 ```
 ]
@@ -417,7 +419,7 @@ blade create -t theme -v 7.2 my-liferay-theme
 .col-6[
 ## Initial Project Structure
 
-```
+```bash
 my-liferay-theme/
 ├── build.gradle
 ├── gradle
