@@ -150,6 +150,7 @@ layout: true
 * Provide default page layouts
 * Using Javascript
 * Make the theme configurable
+* Creating reusable themelets
 
 ---
 
@@ -291,7 +292,7 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 
 ## Update Installed Generators with `yo`
 
-```
+```bash
 berndt@x270$ yo
 ? 'Allo Christian! What would you like to do?
   Liferay Bundle
@@ -310,12 +311,10 @@ berndt@x270$ yo
 
 ## Create a Theme Project with `yo`
 
-```
+```bash
 berndt@x270:git$ yo liferay-theme liferay-simple-theme
 
-
 Welcome to the splendid Themes SDK generator!
-
 
 ℹ️ This version of the Themes SDK (9.5.0) supports Liferay DXP
 and Portal CE from 7.2 to 7.3.
@@ -347,7 +346,7 @@ For older versions, please use v8 of the toolkit:
 
 ## Create a Theme Project with `yo` (continued)
 
-```
+```bash
 ...
 ✔️ The project has been created successfully.
 
@@ -630,9 +629,8 @@ my-liferay-theme/
 
 .col-6[
 ## liferay-look-and-feel.xml (classic)
-```xml
-...
 
+```xml
 <settings>
   <setting configurable="false"
            key="color-palette"
@@ -659,9 +657,6 @@ my-liferay-theme/
            key="wrap-widget-page-content"
            type="checkbox" value="true" />
 </settings>
-
-...
-
 ```
 ]
 
@@ -696,6 +691,56 @@ my-liferay-theme/
 http://www.liferay.com/dtd/liferay-look-and-feel_7_2_0.dtd
 ]
 
+---
+
+# Creating Reusable Themelets
+
+## Themelet Use Cases
+
+* Reusable animations or effects
+
+---
+
+# Creating Reusable Themelets
+
+## Development Steps
+
+1. Create the themelet with `yo liferay-theme:themelet`
+1. Implement themelet code in the `src` directory
+1. Link the themelet to your local NPM repository with `npm link .` (in the themelet's root directory)
+1. Use the themelet in other themes by running `gulp extend`
+
+---
+
+# Creating Reusable Themelets
+
+## Generated Themelet Dependencies
+
+Extending a themelet will add a themelet dependency like the following to your theme's `package.json`:
+
+```json
+...
+"liferayTheme": {
+  "baseTheme": "styled",
+  "fontAwesome": true,
+  "screenshot": "",
+  "templateLanguage": "ftl",
+  "version": "7.2",
+  "themeletDependencies": {
+    "widget-dropzone-themelet": {
+      "liferayTheme": {
+        "screenshot": "",
+        "themelet": true,
+        "version": "7.2"
+      },
+      "name": "widget-dropzone-themelet",
+      "version": "1.0.0",
+      "path": "/home/berndt/.npm-global/lib/node_modules/widget-dropzone-themelet"
+    }
+  }
+},
+...
+```
 ---
 
 class: agenda
