@@ -149,6 +149,7 @@ layout: true
 * Configure brand logo, fonts, and colors
 * Provide default page layouts
 * Using Javascript
+* Make the theme configurable
 
 ---
 
@@ -595,7 +596,11 @@ my-liferay-theme/
 ## Libraries Provided OOTB
 
 * jQuery (enabled in 7.2, disabled by default in 7.3.x, see note 1)
-* ...
+* Metal.js
+
+## Disabled Libraries
+
+* Lodash (OOTB in 7.1, disabled by default in 7.2)
 
 .footnote[
   1) https://liferay.dev/blogs/-/blogs/jquery-is-disabled-long-live-jquery
@@ -618,6 +623,78 @@ my-liferay-theme/
   /o/frontend-js-jquery-web/jquery/popper.min.js&\
   /o/frontend-js-jquery-web/jquery/side_navigation.js" type="text/javascript"></script>
 ```
+
+---
+
+# Make the Theme Configurable
+
+.col-6[
+## liferay-look-and-feel.xml (classic)
+```xml
+...
+
+<settings>
+  <setting configurable="false"
+           key="color-palette"
+           value="primary,success,danger,warning,...,white" />
+  <setting configurable="true"
+           key="show-footer"
+           type="checkbox" value="true" />
+  <setting configurable="true"
+           key="show-header"
+           type="checkbox" value="true" />
+  <setting configurable="true"
+           key="show-header-search"
+           type="checkbox" value="true" />
+  <setting configurable="true"
+           key="show-maximize-minimize-application-links"
+           type="checkbox" value="false" />
+  <setting configurable="false"
+           key="show-site-name-default"
+           value="true" />
+  <setting configurable="false"
+           key="show-site-name-supported"
+           value="true" />
+  <setting configurable="true"
+           key="wrap-widget-page-content"
+           type="checkbox" value="true" />
+</settings>
+
+...
+
+```
+]
+
+.col-6[
+## init_custom.ftl
+```freemarker
+<#assign
+  show_footer = getterUtil
+    .getBoolean(themeDisplay.getThemeSetting("show-footer"))
+
+  show_header = getterUtil
+    .getBoolean(themeDisplay.getThemeSetting("show-header"))
+/>
+```
+]
+
+---
+
+# Make the Theme Configurable
+
+## Setting Attributes
+
+|         |     |                |
+| ------- | --- | -------------- |
+| __key__ |     | the setting's key |
+| __value__ |   | the setting's value |
+| __configurable__ | &nbsp;&nbsp;&nbsp;  | whether the setting is configurable from the user interface at runtime |
+| __type__ |   |  designate whether the HTML input for the setting is a *checkbox*, *select*, *text*, or *textarea* |
+| __options__ |  | a comma delimited list to specify the options for the HTML input |
+
+.footnote[
+http://www.liferay.com/dtd/liferay-look-and-feel_7_2_0.dtd
+]
 
 ---
 
