@@ -745,6 +745,16 @@ Extending a themelet will add a themelet dependency like the following to your t
 ```
 ---
 
+# Creating Reusable Themelets
+
+## Themelet-Include During Build
+
+* Copies of referenced themelets are stored the main theme's `themelets` directory
+* A reference to the themelet's `_custom.scss` is injected between the theme's `_custom.scss` <br/> `/* inject:imports */` and `/* endinject */` comments
+
+
+---
+
 class: agenda
 
 # .inner[Liferay Front-End Development]
