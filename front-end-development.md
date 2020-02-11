@@ -192,7 +192,7 @@ layout: true
 ## Introduction
 
 * "A Web Implementation of Lexicon Experience Language"
-* CSS based on Bootstrap 4
+* CSS based on Bootstrap 4 (4.3.1 in DXP 7.2.x), >= 4.4.1 in DXP 7.3.x)
 * JS Components built with React (Liferay 7.3)
 
 .footnote[
