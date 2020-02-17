@@ -20,7 +20,7 @@ class: agenda
 # .inner[Agenda]
 
 .items[
-1. .active[Front-End Development Tasks]
+1. .active[Customizing Liferay's UI]
 1. Tools and Frameworks
 1. Theme Development
 1. Page Layouts
@@ -28,6 +28,8 @@ class: agenda
 1. Widget Display Templates
 1. Fragment Development
 1. Client-Side JS Widgets
+1. Theme Context Contributor
+1. Theme Contributor
 ]
 
 ---
@@ -35,7 +37,7 @@ class: agenda
 title: Liferay Front-End Development
 layout: true
 
-###.breadcrumbs[Liferay Front-End Development › Front-End Development Tasks]
+###.breadcrumbs[Liferay Front-End Development › Customizing Liferay's UI]
 
 .bottom-bar[
   {{title}}
@@ -43,34 +45,153 @@ layout: true
 
 ---
 
-# Front-End Development Tasks
+# Customizing Liferay's UI
 
 ## Overview
 
-* Theme Development
+* Themes
 * Page Layouts
 * Web-Content Templates
-* Widget Templates
+* Widget Display Templates
 * Fragments
 * Client-Side Javascript Widgets
+* Theme Contributors
+* Theme Context Contributors
 
 ---
 
-# Available Strategies
+# Themes
 
-## Liferay (OSGi) Modules
+## Overview
 
-* Themes
-* Client-JS Widgets
+- Bundle of SCSS-, Freemarker-, Image-, Properties-, and XML-files
+- Packaged and deployed as WAR-File (Web Application Archive)
+- Configurable for site specific settings (color-schemes, show/hide search, etc.)
 
-## Templates
+---
 
-* Web-Content Templates
-* Widget Templates
+# Page Layouts
 
-## Fragments
+## Overview
 
-* Reusable Bundles of HTML, CSS, and JS code
+* TODO
+
+---
+
+# Web-Content Templates
+
+## Overview
+
+- Format structured Web-Content Articles
+- Clean separation of content and presentation
+- Implemented with Freemarker templates
+
+---
+
+# Web-Content Templates
+
+## Example: Press Release
+
+.col-6[
+### press-release.json
+]
+
+.col-6[
+### press-release.ftl
+]
+
+---
+
+# Web-Content Templates
+
+## Example: Press Release (cont.)
+
+.col-6[
+### press-release.xml
+]
+
+.col-6[
+### Rendered output
+
+* TODO: Add screenshot
+]
+
+---
+
+# Widget Display Templates
+
+## Overview
+
+- Lightweight markup customization of Liferay's core applications
+- Implemented with Freemarker templates
+- Available for set based widgets, e.g. *Asset-Publisher*, *Blogs*, *Breadcrumb*, etc.
+- Also available for custom applications
+
+---
+
+# Widget Display Templates
+
+## Example: Asset Publisher
+
+.col-6[
+
+### Cards layout
+
+* TODO: Add screenshot
+
+]
+
+.col-6[
+
+### Carousel
+
+* TODO: Add screenshot
+
+]
+
+---
+
+# Fragments
+
+## Overview
+
+- Aka "Modern Site Building"
+- HTML + CSS + Javascript
+- Inline editing capabilities
+- Meant to be used by "Business Users"
+
+---
+
+# Fragments
+
+## An Example
+
+- TODO: Screenshot, Visually appealing One Pager
+
+
+---
+
+# Client-Side Javascript Widgets
+
+## Overview
+
+* TODO
+
+---
+
+# Theme Contributors
+
+## Overview
+
+* TODO
+
+---
+
+# Theme Context Contributors
+
+## Overview
+
+* TODO
 
 ---
 
@@ -79,7 +200,7 @@ class: agenda
 # .inner[Liferay Front-End Development]
 
 .items[
-1. Front-End Development Tasks
+1. Customizing Liferay's UI
 1. .active[Tools and Frameworks]
 1. Theme Development
 1. Page Layouts
@@ -107,10 +228,79 @@ layout: true
 ## Overview
 
 * liferay-js-themes-toolkit
+* Blade CLI Theme Template
 * Gradle Theme Project
 * Maven Theme Project
 * liferay-js-toolkit
 
+---
+
+# liferay-js-themes-toolkit
+
+## Overview
+
+- Based on *GulpJS*,\* a JavaScript taskrunner
+- Based on *Yeoman*,\*\* a Javascript project generator
+- `watch` functionality provided by `gulp watch`
+- Available for Liferay 7.0.x, 7.1.x, 7.2.x
+
+.footnote[
+\* https://gulpjs.com
+
+\*\* https://yeoman.io
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+## Prerequisities
+
+* `node -v` > 8.0.0
+* Yeoman `npm install -g yo`
+
+## Installation
+
+  ```bash
+  npm install -g generator-liferay-theme@^9.x.x
+  ```
+---
+
+# Tools and Frameworks
+
+## Liferay Developer Studio
+
+1. Create a *Liferay Workspace Project* (or use an existing one):
+  ```
+  File > New > Liferay Workspace Project
+  ```
+1. Create a new *Liferay Module Project*:
+  ```
+  File > New > Liferay Module Project
+  ```
+1. Choose *theme* as Project Template:
+  ```
+  Project Template Name: theme
+  ```
+1. The project will be created in the Liferay Workspace's `wars` directory
+
+---
+
+# Tools and Frameworks
+
+## Blade CLI Theme Template
+
+### Prerequisities
+
+```bash
+blade version > 3.5.0
+```
+
+### Create a *Liferay Theme Project* with BLADE
+
+```bash
+blade create -t theme my-blade-theme
+```
 ---
 
 class: agenda
@@ -118,7 +308,7 @@ class: agenda
 # .inner[Liferay Front-End Development]
 
 .items[
-1. Front-End Development Tasks
+1. Customizing Liferay's UI
 1. Tools and Frameworks
 1. .active[Theme Development]
 1. Page Layouts
@@ -752,6 +942,68 @@ Extending a themelet will add a themelet dependency like the following to your t
 * Copies of referenced themelets are stored the main theme's `themelets` directory
 * A reference to the themelet's `_custom.scss` is injected between the theme's `_custom.scss` <br/> `/* inject:imports */` and `/* endinject */` comments
 
+---
+
+class: agenda
+
+# .inner[Liferay Front-End Development]
+
+.items[
+1. Customizing Liferay's UI
+1. Tools and Frameworks
+1. Theme Development
+1. Page Layouts
+1. Web-Content Templates
+1. .active[Widget Display Templates]
+1. Fragment Development
+1. Client-Side JS Widgets
+]
+
+---
+
+title: Liferay Front-End Development
+layout: true
+
+###.breadcrumbs[Liferay Front-End Development › Widget Display Templates]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Widget Display Templates
+
+## Overview
+
+- Lightweight markup customization of Liferay's core applications
+- Implemented with Freemarker templates
+- Available for set based widgets, e.g. *Asset-Publisher*, *Blogs*, *Breadcrumb*, etc.
+- Also available for custom applications
+
+---
+
+# Widget Display Templates
+
+## Available Variables
+
+* TODO
+
+---
+
+# Widget Display Templates
+
+## Exercise: Implement a Bootstrap Carousel
+
+* TODO
+
+---
+
+# Widget Display Templates
+
+## Exercise: Configure a Lightdesk With Cards
+
+* TODO
 
 ---
 
@@ -760,7 +1012,7 @@ class: agenda
 # .inner[Liferay Front-End Development]
 
 .items[
-1. Front-End Development Tasks
+1. Customizing Liferay's UI
 1. Tools and Frameworks
 1. Theme Development
 1. Page Layouts
@@ -788,6 +1040,7 @@ layout: true
 ## Introduction
 
 * Introduced in Liferay 7.1
+* Content Pages support Workflows
 * ...
 
 ---
@@ -803,12 +1056,13 @@ layout: true
 * Customizable carousels
 
 ---
+
 class: agenda
 
 # .inner[Liferay Front-End Development]
 
 .items[
-1. Front-End Development Tasks
+1. Customizing Liferay's UI
 1. Tools and Frameworks
 1. Theme Development
 1. Page Layouts
