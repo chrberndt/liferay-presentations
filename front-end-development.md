@@ -336,7 +336,7 @@ layout: true
 ## Theme Development Tasks
 
 * Implement responsive markup
-* Configure brand logo, fonts, and colors
+* Define styles for logo, images, fonts, and colors
 * Provide default page layouts
 * Using Javascript
 * Make the theme configurable
@@ -819,8 +819,18 @@ my-liferay-theme/
 
 # Make the Theme Configurable
 
+## Implementation Steps
+
+1. Define settings in `liferay-look-and-feel.xml`
+1. Retrieve settings in Freemarker templates, e.g. `init_custom.ftl`
+1. Render markup according to settings
+
+---
+
+# Make the Theme Configurable
+
 .col-6[
-## liferay-look-and-feel.xml (classic)
+## liferay-look-and-feel.xml
 
 ```xml
 <settings>
@@ -853,6 +863,16 @@ my-liferay-theme/
 ]
 
 .col-6[
+## Rendered UI
+
+* TODO: Add screenshot
+]
+
+---
+
+# Make the Theme Configurable
+
+.col-6[
 ## init_custom.ftl
 ```freemarker
 <#assign
@@ -862,6 +882,13 @@ my-liferay-theme/
   show_header = getterUtil
     .getBoolean(themeDisplay.getThemeSetting("show-header"))
 />
+```
+]
+
+.col-6[
+## portal_normal.ftl
+```freemarker
+TODO
 ```
 ]
 
