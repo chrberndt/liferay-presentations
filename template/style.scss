@@ -47,7 +47,10 @@ h2 {
   margin-bottom: .75rem;
 }
 // h2 { color: $secondary; }
-h3 { color: $tertiary; }
+h3 {
+  color: $tertiary;
+  color: $text-dark;
+}
 li { margin-bottom: .25em; };
 pre, code {
   background: $code-background;
@@ -249,6 +252,12 @@ h3 .breadcrumbs {
   h2 {
     font-size: 1.75rem;
     font-weight: 500;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: .75rem;
   }
 }
 
