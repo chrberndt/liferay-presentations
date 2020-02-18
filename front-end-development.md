@@ -845,9 +845,29 @@ TODO: Show how to use the clay-taglib in FTL
 
 ## Key Sections of `portal_normal.ftl`
 
+.col-6[
+
+]
+
+.col-6[
+]
+
+
 .footnote[
   https://github.com/liferay/liferay-portal/blob/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/portal_normal.ftl
 ]
+
+---
+
+# Implement Responsive Markup
+
+## Markup Implementation Tasks
+
+* Implement logo and brand
+* Implement a responsive navigation
+* Implement a footer
+
+> Note: when using `gulp watch` template modifications <br/> might need take some to be reflected in the portal.
 
 ---
 
