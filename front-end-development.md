@@ -21,7 +21,7 @@ class: agenda
 
 .items[
 1. .active[Customizing Liferay's UI]
-1. Tools and Frameworks
+1. Frameworks and Tools
 1. Theme Development
 1. Page Layouts
 1. Web-Content Templates
@@ -201,7 +201,7 @@ class: agenda
 
 .items[
 1. Customizing Liferay's UI
-1. .active[Tools and Frameworks]
+1. .active[Frameworks and Tools]
 1. Theme Development
 1. Page Layouts
 1. Web-Content Templates
@@ -215,7 +215,7 @@ class: agenda
 title: Liferay Front-End Development
 layout: true
 
-###.breadcrumbs[Liferay Front-End Development › Tools and Frameworks]
+###.breadcrumbs[Liferay Front-End Development › Frameworks and Tools]
 
 .bottom-bar[
   {{title}}
@@ -223,10 +223,13 @@ layout: true
 
 ---
 
-# Tools and Frameworks
+# Frameworks and Tools
 
 ## Overview
 
+* Lexicon
+* Clay
+* Freemarker
 * liferay-js-themes-toolkit
 * Blade CLI Theme Template
 * Gradle Theme Project
@@ -235,6 +238,91 @@ layout: true
 
 ---
 
+# Lexicon
+
+## A design language for the Liferay product ecosystem
+
+* DXP
+* Commerce
+* Analytics
+
+## Building Blocks
+
+* Foundations (Color, Grid, Typography, Writing Style, and more)
+* Components (e.g. Alerts, Buttons, Cards, Dropdown Menu)
+* Templates (e.g. Dataset Template, Form Template)
+
+---
+
+# Clay
+
+## Introduction
+
+* "A Web Implementation of Lexicon Experience Language"
+* CSS based on Bootstrap 4 (4.3.1 in DXP 7.2.x; >= 4.4.1 in DXP 7.3.x)
+* JS Components built with React (Liferay 7.3)
+* Clay 3 with Liferay 7.3, Clay 2 with Liferay 7.2
+
+.footnote[
+  https://next.clayui.com/
+]
+
+---
+
+# Clay
+
+## How to Use Clay?
+
+* Install with NPM or Yarn
+* Install via Clay CSS CDN
+
+.footnote[
+  https://next.clayui.com/docs/get-started/how-to-use-clay.html
+]
+
+---
+
+# Clay
+
+## Clay Taglib
+
+### Consistent markup in JSPs
+
+```jsp
+<%@ taglib uri="http://liferay.com/tld/clay" prefix="clay" %>
+```
+
+### Available in Freemarker templates as well
+
+```Freemarker
+<@clay["image-card"]
+    imageSrc="${blogEntry.getCoverImageURL(themeDisplay)}"
+    href="${viewURL}"
+    title="${entryTitle}"
+    subtitle="${blogEntry.getDisplayDate()?date}"/>
+```
+---
+
+# liferay-js-themes-toolkit
+
+## Introduction
+
+* A set of NPM packages
+* Designed to create, update, and maintain Liferay Themes
+
+## Most relevant packages
+
+* __generator-liferay-theme__: A Yeoman generator for creating themes, themelets, and layout templates
+* __liferay-theme-tasks__: A set of Gulp tasks for building and deploying themes
+
+## Supported Node Version
+
+__10.15.1__ with Liferay __7.2.x__
+
+.footnote[
+  https://github.com/liferay/liferay-js-themes-toolkit
+
+  https://github.com/liferay/liferay-js-themes-toolkit/issues/407
 # liferay-js-themes-toolkit
 
 ## Overview
@@ -266,7 +354,7 @@ layout: true
   ```
 ---
 
-# Tools and Frameworks
+# Frameworks and Tools
 
 ## Liferay Developer Studio
 
@@ -286,7 +374,7 @@ layout: true
 
 ---
 
-# Tools and Frameworks
+# Frameworks and Tools
 
 ## Blade CLI Theme Template
 
@@ -309,7 +397,7 @@ class: agenda
 
 .items[
 1. Customizing Liferay's UI
-1. Tools and Frameworks
+1. Frameworks and Tools
 1. .active[Theme Development]
 1. Page Layouts
 1. Web-Content Templates
@@ -335,6 +423,7 @@ layout: true
 
 ## Theme Development Tasks
 
+* Setup your development environment
 * Implement responsive markup
 * Define styles for logo, images, fonts, and colors
 * Provide default page layouts
@@ -344,91 +433,7 @@ layout: true
 
 ---
 
-# Theme Development
-
-## Guidelines, Frameworks, and Tools
-
-* Freemarker
-* Lexicon
-* Clay
-* liferay-js-themes-toolkit
-* `blade create -t theme -v 7.2 my-liferay-theme`
-
-.footnote[
-* https://liferay.design/lexicon/
-* https://github.com/liferay/liferay-js-themes-toolkit
-]
-
----
-
-# Lexicon
-
-## A design language for the Liferay product ecosystem
-
-* DXP
-* Commerce
-* Analytics
-
-## Building Blocks
-
-* Foundations (Color, Grid, Typography, Writing Style, and more)
-* Components (e.g. Alerts, Buttons, Cards, Dropdown Menu)
-* Templates (e.g. Dataset Template, Form Template)
-
----
-
-# Clay
-
-## Introduction
-
-* "A Web Implementation of Lexicon Experience Language"
-* CSS based on Bootstrap 4 (4.3.1 in DXP 7.2.x; >= 4.4.1 in DXP 7.3.x)
-* JS Components built with React (Liferay 7.3)
-
-.footnote[
-  https://next.clayui.com/
-]
-
----
-
-# Clay
-
-## How to Use Clay?
-
-* Install with NPM or Yarn
-* Install via Clay CSS CDN
-
-.footnote[
-  https://next.clayui.com/docs/get-started/how-to-use-clay.html
-]
-
----
-
-# liferay-js-themes-toolkit
-
-## Introduction
-
-* A set of NPM packages
-* Designed to create, update, and maintain Liferay Themes
-
-## Most relevant packages
-
-* __generator-liferay-theme__: A Yeoman generator for creating themes, themelets, and layout templates
-* __liferay-theme-tasks__: A set of Gulp tasks for building and deploying themes
-
-## Supported Node Version
-
-__10.15.1__ with Liferay __7.2.x__
-
-.footnote[
-  https://github.com/liferay/liferay-js-themes-toolkit
-
-  https://github.com/liferay/liferay-js-themes-toolkit/issues/407
-]
-
----
-
-# liferay-js-themes-toolkit
+# Setup Your Development Environment
 
 ## Install Liferay Locally
 
@@ -437,10 +442,19 @@ __10.15.1__ with Liferay __7.2.x__
 1. Adjust `user.timezone` setting in `TOMCAT_HOME/bin/setenv.sh / .bat`
 1. Startup Liferay with `$LIFERAY_HOME/$TOMCAT_HOME/bin/catalina.sh run`
 1. Deploy the license file
+1. Navigate to `http://localhost:8080` and finish the setup wizard
 
 ---
 
-# liferay-js-themes-toolkit
+# Setup Your Development Environment
+
+## Use a Liferay Cloud Setup
+
+* TODO
+
+---
+
+# Setup Your Development Environment
 
 ## portal-developer.properties
 
@@ -474,7 +488,7 @@ com.liferay.portal.servlet.filters.themepreview.ThemePreviewFilter=true
 
 ---
 
-# liferay-js-themes-toolkit
+# Setup Your Development Environment
 
 ## Install Yeoman
 
@@ -499,9 +513,22 @@ berndt@x270$ yo
 
 ---
 
-# liferay-js-themes-toolkit
+# Create, Build, and Deploy a Theme
 
-## Create a Theme Project with `yo`
+## Overview
+
+1. Generate the Theme Project with *Yeoman*
+1. Build the theme with Gulp
+1. Override files in the `build` directory with corresponding files in the `src` directory
+1. Deploy the theme to the server
+1. Configure the theme for the default site of your development server
+1. Use `gulp watch` to automatically refresh the theme when you modify the sources
+
+---
+
+# Create, Build, and Deploy a Theme
+
+## Create a Theme Project with Yeoman (`yo`)
 
 ```bash
 berndt@x270:git$ yo liferay-theme liferay-simple-theme
@@ -521,9 +548,6 @@ For older versions, please use v8 of the toolkit:
 ? What id would you like to give to your theme? liferay-simple-theme
 ? Which version of Liferay is this theme for? 7.2
 ? Would you like to add Font Awesome to your theme? Yes
- conflict .gitignore
-? Overwrite .gitignore? overwrite
-    force .gitignore
    create gulpfile.js
    create package.json
    create src/WEB-INF/liferay-look-and-feel.xml
@@ -534,7 +558,7 @@ For older versions, please use v8 of the toolkit:
 ```
 ---
 
-# liferay-js-themes-toolkit
+# Setup Your Development Environment
 
 ## Create a Theme Project with `yo` (continued)
 
@@ -580,19 +604,120 @@ liferay-simple-theme/
 
 # liferay-js-themes-toolkit
 
-## Gulp tasks
+## Anatomy of a Liferay Theme: `gulpfile.js`
 
-* `build`
-* `deploy`
-* `extend`
-* `help`
-* `init`
-* `kickstart`
-* `overwrite`
-* `status`
-* `upgrade`
-* `watch`
+.col-6[
+```js
+/**
+ * © 2017 Liferay, Inc. <https://liferay.com>
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+'use strict';
+
+var gulp = require('gulp');
+var liferayThemeTasks = require('liferay-theme-tasks');
+
+liferayThemeTasks.registerTasks({
+  gulp,
+});
+```
+]
+
+.col-6[
+* Automatically loaded when you run the `gulp` command.
+* Registers the functions exported by `liferay-theme-tasks` into gulp's task system
+* Available `liferay-theme-tasks`: *build, deploy, extend, kickstart, status, watch, init*
 * For a complete list of tasks run `gulp help`
+]
+
+.footnote[
+https://github.com/liferay/liferay-js-themes-toolkit/tree/master/packages/liferay-theme-tasks
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+## Anatomy of a Liferay Theme: `liferay-theme.json`
+
+.col-6[
+```json
+TODO
+```
+]
+
+.col-6[
+* Local project settings
+* Excluded from `git` by default
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+## Anatomy of a Liferay Theme: `package.json`
+
+.col-6[
+```json
+TODO
+```
+]
+
+.col-6[
+* NPM project and dependency configuration
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+## Anatomy of a Liferay Theme: `src`
+
+.col-6[
+```bash
+TODO
+```
+]
+
+.col-6[
+* Core theme files
+* Files stored in `src` overwrite files from __\_unstyled__ and __\_styled__ during build
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+
+.col-6[
+## The `_unstyled` Theme
+
+* TODO
+
+]
+
+--
+
+.col-6[
+## The `_styled` Theme
+
+* TODO
+
+]
+
+---
+
+# liferay-js-themes-toolkit
+
+## The Theme Build Process: `gulp build`
+
+1. Base theme (`_styled`) files are copied to the `build` directory
+1. Theme files from `src` are copied to the `build` directory
+  > In order to override base theme files, your custom files must have the same names and directory structure as the files you want to customize.
+1. If necessary, JS and SCSS files are merged and compiled
+1. The Theme is packaged as WAR file and stored in the `dist` folder
 
 ---
 
@@ -646,6 +771,23 @@ my-liferay-theme/
 
 ---
 
+# Customize Theme Templates
+
+## Theme template files of the base theme are found in `build/templates`
+
+.small[
+|      Template       | &nbsp; |  Function |
+| ------------------- |-| --------- |
+| `portal_normal.ftl` | | template for a regular portal page (with banner-, content-, and footer-sections) |
+| `portal_pop_up.ftl` | | template for a portal page in pop-up mode (without banner- and footer-section) |
+| `portlet.ftl`       | | template for common portlet markup |
+| `navigation.ftl`    | | template for the main navigation |
+| `init.ftl`          | | setup common variables, included by `portal_normal.ftl`, `portal_pop_up.ftl` |
+| `init_custom.ftl`   | | default extension point for custom template initialization code  |
+]
+
+---
+
 # Implement Responsive Markup
 
 ## Freemarker
@@ -679,89 +821,23 @@ my-liferay-theme/
 
 # Implement Responsive Markup
 
-```freemarker
-<!DOCTYPE html>
+## Freemarker
 
-<#include init />
+### An Example
 
-<html class="${root_css_class}" dir="<@liferay.language key="lang.dir" />" lang="${w3c_language_id}">
+TODO: https://freemarker.apache.org/docs/dgui_template_overallstructure.html
 
-<head>
-  <title>${the_title} - ${company_name}</title>
+### Directives and Expressions
 
-  <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+TODO: https://freemarker.apache.org/docs/dgui_template_directives.html
 
-  <@liferay_util["include"] page=top_head_include />
-</head>
+TODO: https://freemarker.apache.org/docs/dgui_template_exp.html
 
-<body class="${css_class}">
+### Using Taglibs
 
-<@liferay_ui["quick-access"] contentId="#main-content" />
+TODO: Show how to use the clay-taglib in FTL
 
-<@liferay_util["include"] page=body_top_include />
-
-<@liferay.control_menu />
-
-<div class="container-fluid" id="wrapper">
-  <header id="banner" role="banner">
-    <div id="heading">
-      <h1 class="site-title">
-        <a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-          <img alt="${logo_description}" height="${site_logo_height}" src="${site_logo}" width="${site_logo_width}" />
-        </a>
-
-        <#if show_site_name>
-          <span class="site-name" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-            ${site_name}
-          </span>
-        </#if>
-      </h1>
-    </div>
-
-    <#if !is_signed_in>
-      <a data-redirect="${is_login_redirect_required?string}" href="${sign_in_url}" id="sign-in" rel="nofollow">${sign_in_text}</a>
-    </#if>
-
-    <#if has_navigation && is_setup_complete>
-      <#include "${full_templates_path}/navigation.ftl" />
-    </#if>
-  </header>
-
-  <section id="content">
-    <h1 class="hide-accessible">${the_title}</h1>
-
-    <#if selectable>
-      <@liferay_util["include"] page=content_include />
-    <#else>
-      ${portletDisplay.recycle()}
-
-      ${portletDisplay.setTitle(the_title)}
-
-      <@liferay_theme["wrap-portlet"] page="portlet.ftl">
-        <@liferay_util["include"] page=content_include />
-      </@>
-    </#if>
-  </section>
-
-  <footer id="footer" role="contentinfo">
-    <p class="powered-by">
-      <@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
-    </p>
-  </footer>
-</div>
-
-<@liferay_util["include"] page=body_bottom_include />
-
-<@liferay_util["include"] page=bottom_include />
-
-</body>
-
-</html>
-```
-
-.footnote[
-  https://github.com/liferay/liferay-portal/blob/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/portal_normal.ftl
-]
+### Using Macros
 
 ---
 
@@ -769,16 +845,66 @@ my-liferay-theme/
 
 ## Key Sections of `portal_normal.ftl`
 
+.footnote[
+  https://github.com/liferay/liferay-portal/blob/7.2.x/modules/apps/frontend-theme/frontend-theme-unstyled/src/main/resources/META-INF/resources/_unstyled/templates/portal_normal.ftl
+]
 
 ---
 
-# Configure brand logo, fonts, and colors
+# Configure Brand Logos, Images, Fonts and Colors
 
-##
+## Overview
+
+* SASS
+* Include Clay / Bootstrap Styles
+* Customize Clay / Bootrap Variables
+* Override Clay / Bootstrap Styles
+* Implement Custom Styles with SASS
 
 ---
 
-# Provide default page layouts
+# Configure Brand Logos, Images, Fonts and Colors
+
+## SASS
+
+* TODO
+
+.footnote[
+https://sass-lang.com/
+]
+
+---
+
+# Configure Brand Logos, Images, Fonts and Colors
+
+## Overview
+
+* Using Images
+* Using Icon Libraries (Fontawesome)
+* Using Vector Graphics
+
+---
+
+# Provide Custom Page Layout
+
+## Layouts Provided OOTB
+
+* TODO
+
+## Providing Custom Page Layouts
+
+* As part of a theme
+* As a separate module
+
+---
+
+# Using Javascript
+
+## Javascript Tasks
+
+* Using vanilla JS
+* Using libraries provided by Liferay OOTB
+* Adding third party JS libraries
 
 ---
 
@@ -977,7 +1103,7 @@ class: agenda
 
 .items[
 1. Customizing Liferay's UI
-1. Tools and Frameworks
+1. Frameworks and Tools
 1. Theme Development
 1. Page Layouts
 1. Web-Content Templates
@@ -1040,7 +1166,7 @@ class: agenda
 
 .items[
 1. Customizing Liferay's UI
-1. Tools and Frameworks
+1. Frameworks and Tools
 1. Theme Development
 1. Page Layouts
 1. Web-Content Templates
@@ -1090,7 +1216,7 @@ class: agenda
 
 .items[
 1. Customizing Liferay's UI
-1. Tools and Frameworks
+1. Frameworks and Tools
 1. Theme Development
 1. Page Layouts
 1. Web-Content Templates
