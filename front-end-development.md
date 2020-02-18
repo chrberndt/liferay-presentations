@@ -887,7 +887,56 @@ TODO: Show how to use the clay-taglib in FTL
 
 ## SASS
 
-* TODO
+.col-6[
+### SCSS source
+
+```scss
+#header {
+  h1 {
+    color: blue;
+  }
+}
+
+#content {
+  h1 {
+    color: darkgrey;
+  }
+}
+```
+]
+
+.col-6[
+### Compiled CSS
+```css
+#header h1 {
+  color: blue;
+}
+
+#content h1 {
+  color: darkgrey;
+}
+```
+]
+
+# &nbsp;
+
+.col-6[
+### Markup
+```html
+<header id="header">
+  <h1>This is a header headline></h1>
+</header>
+<section id="content">
+  <h1>This is a content headline></h1>
+</section>
+```
+]
+
+.col-6[
+### Rendered Output
+<h1 style="color: blue; font-family: serif;">This is a header headline</h1>
+<h1 style="color: darkgrey; font-family: serif;">This is a content headline</h1>
+]
 
 .footnote[
 https://sass-lang.com/
@@ -897,7 +946,131 @@ https://sass-lang.com/
 
 # Configure Brand Logos, Images, Fonts and Colors
 
-## Overview
+## Using Clay / Bootstrap Styles in Markup
+
+### `clay.css` included by default in themes based on the `_styled` theme
+
+```html
+<link class="lfr-css-file"
+      data-senna-track="temporary"
+      href="http://localhost:8080/o/liferay-simple-theme/css/clay.css?browserId=other&amp;themeId=liferaysimpletheme_WAR_liferaysimpletheme&amp;..."
+      id="liferayAUICSS"
+      rel="stylesheet"
+      type="text/css" />
+```
+> <small>href attribute abbreviated for clarity.</small>
+
+.col-6[
+
+### Using Bootstrap CSS classes
+
+```html
+<div class="alert alert-primary" role="alert">
+  A simple primary alert-check it out!
+</div>
+```
+]
+
+.col-6[
+### Rendered Output
+<style>
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  font-size: 1rem;
+}
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+</style>
+
+<div class="alert alert-primary" role="alert">
+  A simple primary alert-check it out!
+</div>
+]
+
+---
+
+# Configure Brand Logos, Images, Fonts and Colors
+
+## Using the Clay Taglib
+
+.col-6[
+
+### Clay Tag
+
+```Freemarker
+<@clay["alert"]
+  title="Info: "
+  message="A simple clay alert-check it out!"/>
+```
+]
+
+.col-6[
+### Rendered Markup
+```html
+<div class="alert alert-info fade show" id="ehhg" role="alert">
+  <span class="alert-indicator">
+    <svg class="lexicon-icon lexicon-icon-info-circle"
+         focusable="false"
+         role="presentation" viewBox="0 0 512 512">
+      <path class="lexicon-icon-outline" d="..."></path>
+    </svg>
+  </span>
+  <strong class="lead">Info: </strong>A simple clay alert-check it out!
+</div>
+```
+> <small> Path definition parameters removed for clarity. </small>
+]
+
+.col-6[
+### Rendered Output
+<style>
+.alert, .portlet-msg-alert, .portlet-msg-error, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .portlet-msg-success {
+    border-style: solid;
+    display: block;
+    word-wrap: break-word;
+}
+.alert-info, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+.alert-indicator {
+    font-size: 1.25rem;
+}
+.lexicon-icon {
+    display: inline-block;
+    fill: currentColor;
+    height: 1em;
+    margin-top: -3px;
+    vertical-align: middle;
+    width: 1em;
+}
+.alert-indicator + .lead {
+    margin-left: 0.3125rem;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+</style>
+<div class="alert alert-info fade show" id="ehhg" role="alert"><span class="alert-indicator"><svg class="lexicon-icon lexicon-icon-info-circle" focusable="false" role="presentation" viewBox="0 0 512 512">
+  <path class="lexicon-icon-outline" d="M437,75C388.7,26.6,324.4,0,256,0C187.6,0,123.3,26.6,75,75C26.6,123.3,0,187.6,0,256c0,68.4,26.6,132.7,75,181c48.4,48.4,112.6,75,181,75c68.4,0,132.7-26.6,181-75c48.4-48.4,75-112.6,75-181C512,187.6,485.4,123.3,437,75z M288,384c0,17.7-14.3,32-32,32c-17.7,0-32-14.3-32-32V224c0-17.7,14.3-32,32-32c17.7,0,32,14.3,32,32V384z M256,160c-17.7,0-32-14.3-32-32c0-17.7,14.3-32,32-32s32,14.3,32,32C288,145.7,273.7,160,256,160z"></path>
+</svg></span><strong class="lead">Info: </strong>A simple clay alert-check it out!</div>
+]
+
+---
+
+# Configure Brand Logos, Images, Fonts and Colors
+
+## Using Images, Icon Libraries, and Vector Graphics
 
 * Using Images
 * Using Icon Libraries (Fontawesome)
