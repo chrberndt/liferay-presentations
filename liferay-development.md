@@ -127,7 +127,7 @@ layout: true
 
 * Liferay's code generation tool
 * Dependency injection either via _OSGI Declarative Services_ (default) or _Spring_
-  * How and when to configure Spring? 
+  * TODO: How and when to configure Spring?
 * Support for visual and wizard based modeling in Developer Studio
 
 ---
@@ -205,6 +205,31 @@ layout: true
   Source: http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd
 ]
 
+---
+
+# Inspecting Generated Database Tables
+
+## HSQL In Memory Database
+
+1. Launch HSQL-GUI with:
+
+  ```bash
+  java -jar $LIFERAY_HOME/tomcat-9.0.17/lib/ext/hsql.jar
+  ```
+
+  > `$LIFERAY_HOME` must point to the base directory of your unpacked Liferay development bundle. The Tomcat version must match the development bundle's Tomcat version.
+
+1. Connect to your database with the following settings:
+
+  ```properties
+  Recent Setting = <none> (default)
+  Setting Name = <empty> (default)
+  Type = HSQL Database Engine In-Memory (default)
+  Driver = org.hsqldb.jdbcDriver
+  URL = jdbc:hsqldb:file:LIFERAY_HOME/data/hypersonic/lportal
+  User = SA (default)
+  Password = <empty> (default)
+  ```
 ---
 
 # Service Implementation
