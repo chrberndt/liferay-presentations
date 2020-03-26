@@ -76,8 +76,17 @@ layout: true
 
 ## Tips and Tricks
 
+### How do I determine valid target.platform values?
+
+See: https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/portal/release.dxp.bom/
+
+### How do I determine the bundle version applied for a particular target.platform?
+
 1. TODO: How do I determine the versions of a particular target platform (e.g. which JUnit version is used)?
 
+---
+
+# Liferay Workspace
 
 ## Fix JAVA_HOME issues in Developer Studio DXP on Windows
 
