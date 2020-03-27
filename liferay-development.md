@@ -82,7 +82,13 @@ See: https://repository.liferay.com/nexus/content/repositories/liferay-public-re
 
 ### How do I determine the bundle version applied for a particular target.platform?
 
-1. TODO: How do I determine the versions of a particular target platform (e.g. which JUnit version is used)?
+e.g. which version of JUnit is used?
+
+inspect third.party BOMs at https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/portal/release.dxp.bom.third.party/
+
+for javax.\* and osgi.\* see:
+
+https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/portal/release.dxp.bom.compile.only/
 
 ---
 
