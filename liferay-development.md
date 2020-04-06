@@ -68,6 +68,8 @@ layout: true
   https://github.com/liferay/liferay-portal/tree/master/modules/sdk/gradle-plugins-target-platform
 
   https://liferay.dev/blogs/-/blogs/what-is-the-target-platform-
+
+  https://github.com/rotty3000/papersntalks/blob/master/2020/Liferay-Workspace-DXP.md
 ]
 
 ---
