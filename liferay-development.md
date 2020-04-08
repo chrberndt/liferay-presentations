@@ -96,6 +96,20 @@ https://repository.liferay.com/nexus/content/repositories/liferay-public-release
 
 # Liferay Workspace
 
+## Tips and Tricks
+
+### deployFast task
+
+speed up deployment times for WAR based projects
+
+.footnote[
+https://loop.liferay.com/home/-/loop/feed/19825955
+]
+
+---
+
+# Liferay Workspace
+
 ## Fix JAVA_HOME issues in Developer Studio DXP on Windows
 
 1. `org.gradle.java.home=C:/Program Files/Java/your_jdk_version` - _Note the forward slashes on Windows._
