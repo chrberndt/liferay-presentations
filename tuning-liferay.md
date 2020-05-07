@@ -39,11 +39,31 @@ layout: true
 
 ---
 
-# Tuning the Liferay Application 
+# Tuning the Liferay Application
 
 ## Resources
 
 * https://www.liferay.com/resource?folderId=3292406&title=Liferay+DXP+7.2+Deployment+Checklist
+
+---
+
+# Tuning the Liferay Application
+
+## JVM Monitoring Tools
+
+* JConsole
+* JVisualVM
+* Glowroot
+* JCEasy (Garbage Collector Monitoring)
+
+---
+
+# Tuning the Liferay Application
+
+## Analyzing Memory Consumption
+
+1. Create heap dump with `jmap -dump:[live],format=b,file=<file-path-to-store-dump> <java_process_id>`
+1. Analyze dump with Eclipse Memory Analyzer Tool (MAT) (https://www.eclipse.org/mat)
 
 ---
 
