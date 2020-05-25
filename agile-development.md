@@ -199,6 +199,39 @@ layout: true
 
 * JUnit
 * Arquillian
+* Jest
+
+---
+
+# JUnit
+
+* TODO
+
+---
+
+# Arquillian
+
+* TODO
+
+---
+
+# Jest
+
+* Javascript Testing Framework
+
+.footnote[
+  https://jestjs.io
+]
+---
+
+# Jest
+
+## Using Jest with Liferay React Components
+
+* Resources: https://liferay.slack.com/archives/C03CAD9EF/p1590163518113600
+
+
+
 
 ---
 
