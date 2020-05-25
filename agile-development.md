@@ -230,8 +230,11 @@ layout: true
 
 * Resources: https://liferay.slack.com/archives/C03CAD9EF/p1590163518113600
 
+---
 
+# Poshi Tests
 
+* Resources: https://loop.liferay.com/es/home/-/loop/feed/21246922
 
 ---
 
