@@ -619,3 +619,29 @@ layout: true
 .bottom-bar[
   {{title}}
 ]
+
+---
+
+# Liferay Workflows
+
+## Overview
+
+* TODO
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360034748552-Using-Workflow
+]
+---
+
+# Liferay Workflows
+
+## Fields Required in service.xml
+
+```xml
+    <column name="status" type="int" />
+    <column name="statusByUserId" type="long" />
+    <column name="statusByUserName" type="String" uad-anonymize-field-name="fullName" />
+    <column name="statusDate" type="Date" />
+```
+
+
