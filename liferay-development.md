@@ -160,16 +160,24 @@ layout: true
 
 # Service Builder
 
+## Overview
+
+* Introduction and Features
+* service.xml
+* Inspecting Generated Database Tables
+* Service Implementation
+* Sanitization and Validation
+
+---
+
+# Service Builder
+
 ## Introduction
 
 * Liferay's code generation tool
 * Dependency injection either via _OSGI Declarative Services_ (default) or _Spring_
   * TODO: How and when to configure Spring?
 * Support for visual and wizard based modeling in Developer Studio
-
----
-
-# Service Builder
 
 ## Features
 
@@ -289,6 +297,33 @@ layout: true
 * _**fetch**Entity()_: TODO
 * _**get**Entity()_: TODO
 
+
+---
+
+# Sanitization and Validation
+
+## Validation
+
+> Validation is the process of ensuring that input data falls within the expected domain of valid program input. This requires that inputs conform to type and numeric range requirements as well as to input invariants for the class or subsystem.
+
+## Sanitization
+
+> Data sanitization is the process of ensuring that data conforms to the requirements of the subsystem to which it is passed. [...] Sanitization may include the elimination of unwanted characters from the input by means of removing, replacing, encoding, or escaping the characters. Sanitization may occur following input (input sanitization) or before the data is passed across a trust boundary (output sanitization). Data sanitization and input validation may coexist and complement each other. [...]
+
+.footnote[
+https://wiki.sei.cmu.edu/confluence/display/java/Input+Validation+and+Data+Sanitization
+]
+
+---
+
+# Sanitization and Validation
+
+## `protected void validate()`
+
+* Validation in general performed in *LocalServiceImpl* class.
+* If validation fails an exception is thrown
+* Exceptions are handled in controller and view components
+* Performed both in *add-* and in *update-* method
 
 ---
 
