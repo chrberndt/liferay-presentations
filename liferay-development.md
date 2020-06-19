@@ -82,6 +82,12 @@ layout: true
 
 See: https://repository.liferay.com/nexus/content/repositories/liferay-public-releases/com/liferay/portal/release.dxp.bom/
 
+---
+
+# Liferay Workspace
+
+## Tips and Tricks
+
 ### How do I determine the bundle version applied for a particular target.platform?
 
 e.g. which version of JUnit is used?
