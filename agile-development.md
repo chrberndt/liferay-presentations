@@ -23,6 +23,7 @@ class: agenda
 * .active[Terms and Concepts]
 * Testing Methodology 
 * Tools and Frameworks
+* Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
 * Setup a Continous Delivery Pipeline
 ]
@@ -98,6 +99,7 @@ class: agenda
 * Terms and Concepts
 * .active[Testing Methodology] 
 * Tools and Frameworks
+* Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
 * Setup a Continous Delivery Pipeline
 ]
@@ -140,7 +142,7 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 ## Types of Tests
 
 * Unit Tests
-* Integration Tests 
+* Integration Tests
 * Acceptance Tests
 * Smoke Tests
 * Regression Tests
@@ -178,6 +180,7 @@ class: agenda
 * Terms and Concepts
 * Testing Methodology 
 * .active[Tools and Frameworks]
+* Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
 * Setup a Continous Delivery Pipeline
 ]
@@ -246,13 +249,132 @@ class: agenda
 * Terms and Concepts
 * Testing Methodology
 * Tools and Frameworks
-* .active[Setup a Continous Integration Pipeline]
+* .active[Configure Liferay Integration Tests]
+* Setup a Continous Integration Pipeline
 * Setup a Continous Delivery Pipeline
 ]
 
 ---
 
 title: Agile Development with Liferay 
+layout: true
+
+###.breadcrumbs[Agile Development with Liferay › Configure Liferay Integration Tests]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Configure Liferay Integration Tests
+
+## Overview
+
+* Create a Test Module
+* Configure Test Dependencies
+* Determine Test Dependency Versions 
+
+---
+
+# Configure Liferay Integration Tests
+
+## Create a Test Module
+
+1. ...
+1. Add `testDir` property to `build.gradle` in *-service* module (optional)
+
+```groovy
+buildService {
+  apiDir = "../liferay-todo-list-api/src/main/java"
+  testDir = "../liferay-todo-list-test/src/testIntegration/java"
+}
+```
+
+---
+
+# Configure Liferay Integration Tests
+
+## Configure Test Dependencies
+
+```groovy
+dependencies {
+  // template start
+  testCompile group: "com.liferay", name: "com.liferay.petra.lang"
+  testCompile group: "com.liferay", name: "com.liferay.petra.string"
+  testCompile group: "com.liferay", name: "com.liferay.registry.api"
+  testCompile group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+  testCompile group: "javax.portlet", name: "portlet-api"
+  testCompile group: "junit", name: "junit"
+  testCompile group: "org.apache.felix", name: "org.apache.felix.http.servlet-api", version: "1.1.2"
+  testCompile group: "org.osgi", name: "org.osgi.core"
+  testCompile group: "org.springframework", name: "spring-test"
+  testCompile group: "org.slf4j", name: "slf4j-api"
+
+  testIntegrationCompile group: "com.liferay", name: "com.liferay.arquillian.extension.junit.bridge", version: "1.0.19"
+  testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test", version: "6.0.7"
+  testIntegrationCompile group: "com.liferay.portal", name: "com.liferay.portal.test.integration", version: "6.0.7"
+  testIntegrationCompile group: "log4j", name: "log4j", version: "1.2.17"
+  // template end
+
+  // service builder template start
+  testIntegrationCompile project(":modules:sample:sample-api")
+  testIntegrationCompile project(":modules:sample:sample-service")
+  // service builder template end
+
+  // these will be fixed by workspace
+  testModules group: "com.liferay", name: "com.liferay.arquillian.extension.junit.bridge.connector", version: "1.0.0"
+  testModules group: "com.liferay.portal", name: "com.liferay.portal.test", version: "6.0.7"
+  testModules group: "com.liferay.portal", name: "com.liferay.portal.test.integration", version: "6.0.7"
+  testModules group: "org.apache.aries.jmx", name: "org.apache.aries.jmx.core", version: "1.1.7"
+
+  // this will no longer be necessary once we fix DestinationSyncRule
+  testModules group: "com.liferay", name: "com.liferay.sync.api", version: "5.0.6"
+  testModules group: "com.liferay", name: "com.liferay.sync.service", version: "3.0.9"
+}
+
+// the following configurations will no longer be necessary in future versions of workspace
+copyTestModules {
+  dependsOn ":modules:sample:sample-api:deploy", ":modules:sample:sample-service:deploy"
+}
+
+setUpTestableTomcat {
+  dependsOn ":initBundle"
+}
+```
+
+.footnote[
+https://github.com/gamerson/liferay-workspace-test-dev/blob/master/modules/sample/sample-test/build.gradle
+]
+
+---
+
+# Configure Liferay Integration Tests
+
+## Determine Test Dependency Versions
+
+* Check `portal-test.properties` and `portal-test-integration.properties`
+* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test.properties  
+* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test-integration.properties  
+
+---
+
+class: agenda
+
+# .inner[Agile Development with Liferay]
+
+.items[
+* Terms and Concepts
+* Testing Methodology
+* Tools and Frameworks
+* Configure Liferay Integration Tests
+* .active[Setup a Continous Integration Pipeline]
+* Setup a Continous Delivery Pipeline
+]
+
+---
+
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Setup a Continous Integration Pipeline]
@@ -277,6 +399,7 @@ class: agenda
 * Terms and Concepts
 * Testing Methodology
 * Tools and Frameworks
+* Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
 * .active[Setup a Continous Delivery Pipeline]
 ]
