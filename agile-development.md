@@ -354,8 +354,8 @@ https://github.com/gamerson/liferay-workspace-test-dev/blob/master/modules/sampl
 ## Determine Test Dependency Versions
 
 * Check `portal-test.properties` and `portal-test-integration.properties`
-* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test.properties  
-* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test-integration.properties  
+* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test.properties
+* e.g. https://github.com/liferay/liferay-portal/blob/7.2.1-ga2/modules/.releng/portal-test-integration.properties
 
 ---
 
