@@ -431,6 +431,146 @@ layout: true
 
 ---
 
+# Permission Framework
+
+## Overview
+
+* Resources, Permissions, and Roles
+* Implementation Steps
+
+.footnote[
+https://help.liferay.com/hc/en-us/articles/360034199332-Using-Resources-and-Permissions
+]
+---
+
+# Permission Framework
+
+## Resources, Permissions, and Roles
+
+* TODO
+
+---
+
+# Permission Framework
+
+## Implementation Steps
+
+1. __Define__ resources and permissions
+1. __Register__ (and unregister) defined resources in (from) the permission system
+1. __Associate__ permissions with resources
+1. __Check__ for permission before returning resources
+
+---
+
+# Permission Framework
+
+## Defining Permissions
+
+* By convention defined in `resources/resource-actions/default.xml` (for -web modules) 
+* By convention defined in `resources/META-INF/resource-actions/default.xml` (for -service modules) 
+* Path to `default.xml` configured in `resources/portlet.properties`
+
+---
+
+# Permission Framework
+
+## Defining Model Permissions
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE resource-action-mapping PUBLIC "-//Liferay//DTD Resource Action Mapping 7.2.0//EN" 
+  "http://www.liferay.com/dtd/liferay-resource-action-mapping_7_2_0.dtd">
+
+<resource-action-mapping>
+  <model-resource>
+    <model-name>com.liferay.blogs</model-name>
+    <portlet-ref>
+      <portlet-name>com_liferay_blogs_web_portlet_BlogsAdminPortlet</portlet-name>
+      <portlet-name>com_liferay_blogs_web_portlet_BlogsPortlet</portlet-name>
+    </portlet-ref>
+    <root>true</root>
+    <weight>1</weight>
+    <permissions>
+      <supports>
+        <action-key>ADD_ENTRY</action-key>
+        <action-key>PERMISSIONS</action-key>
+        <action-key>SUBSCRIBE</action-key>
+      </supports>
+      <site-member-defaults>
+        <action-key>SUBSCRIBE</action-key>
+      </site-member-defaults>
+      <guest-defaults />
+      <guest-unsupported>
+        <action-key>ADD_ENTRY</action-key>
+        <action-key>PERMISSIONS</action-key>
+        <action-key>SUBSCRIBE</action-key>
+      </guest-unsupported>
+    </permissions>
+  </model-resource>
+  <model-resource>
+    <model-name>com.liferay.blogs.model.BlogsEntry</model-name>
+    <portlet-ref>
+      <portlet-name>com_liferay_blogs_web_portlet_BlogsAdminPortlet</portlet-name>
+      <portlet-name>com_liferay_blogs_web_portlet_BlogsPortlet</portlet-name>
+    </portlet-ref>
+    <weight>2</weight>
+    <permissions>
+      <supports>
+        <action-key>ADD_DISCUSSION</action-key>
+        <action-key>DELETE</action-key>
+        <action-key>DELETE_DISCUSSION</action-key>
+        <action-key>PERMISSIONS</action-key>
+        <action-key>UPDATE</action-key>
+        <action-key>UPDATE_DISCUSSION</action-key>
+        <action-key>VIEW</action-key>
+      </supports>
+      <site-member-defaults>
+        <action-key>ADD_DISCUSSION</action-key>
+        <action-key>VIEW</action-key>
+      </site-member-defaults>
+      <guest-defaults>
+        <action-key>ADD_DISCUSSION</action-key>
+        <action-key>VIEW</action-key>
+      </guest-defaults>
+      <guest-unsupported>
+        <action-key>DELETE</action-key>
+        <action-key>DELETE_DISCUSSION</action-key>
+        <action-key>PERMISSIONS</action-key>
+        <action-key>UPDATE</action-key>
+        <action-key>UPDATE_DISCUSSION</action-key>
+      </guest-unsupported>
+    </permissions>
+  </model-resource>
+</resource-action-mapping>
+```
+
+---
+
+# Permission Framework
+
+## Defining Portlet Permissions
+
+```xml
+TODO
+```
+
+---
+
+# Permission Framework
+
+## Register (and Unregister) Permissions
+
+* TODO
+
+---
+
+# Permission Framework
+
+## Check Permissions (in Remote Services)
+
+
+---
+
 class: agenda
 
 # .inner[Agenda]
