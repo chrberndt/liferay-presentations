@@ -41,15 +41,19 @@ layout: true
 
 ---
 
-# Terms and Concepts 
+# Terms and Concepts
+
+## Overview
 
 * Agile Development
-* Scrum, Kanban, ...
+* Scrum
 * DevOps
 
 ---
 
-# Agile Development: History
+# Agile Development
+
+## History of the Agile Movement
 
 * ...
 
@@ -66,9 +70,11 @@ layout: true
 
 ---
 
-# Scrum: Introduction
+# Scrum
 
-## An agile process framework designed for teams of ten or fewer members
+## Introduction
+
+> An agile process framework designed for teams of ten or fewer members
 
 * Sutherland / Schwaber 1995 (based on older research)
 * Schwaber and Beedle, _Agile Software Development with Scrum_, 2001
@@ -76,9 +82,31 @@ layout: true
 * 2009: scrum.org: _Professional Scrum_
 * 2009: _The Scrum Guide_ (latest revision November 2017)
 
+.footnote[
 Source: https://en.wikipedia.org/wiki/Scrum_(software_development) 
+]
 
 ---
+
+# DevOps
+
+## Overview
+
+> A set of practices that combines software development (*Dev*) and IT operations (*Ops*).
+
+* 
+
+.footnote[
+Source: https://en.wikipedia.org/wiki/DevOps
+]
+
+---
+
+# DevOps
+
+## DevOps Values
+
+
 
 title: Agile Development with Liferay 
 layout: true
