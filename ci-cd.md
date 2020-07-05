@@ -141,3 +141,12 @@ pipeline {
     }
 }
 ```
+---
+
+# Jenkins
+
+## Jenkinsfile: Sections
+
+* `agent`: TODO (valid values, prerequisites)
+* `stages`: TODO
+* `post`: TODO (valid sections, e.g. `always`, `success`, `failure`, `changed`)
