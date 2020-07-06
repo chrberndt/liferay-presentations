@@ -194,3 +194,16 @@ https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/
 https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/
 ]
 
+---
+
+# Jenkins
+
+## Jenkinsfile: Environment Variables
+
+* TODO
+
+.footnote[
+https://www.jenkins.io/doc/pipeline/tour/environment/
+]
+
+
