@@ -149,4 +149,48 @@ pipeline {
 
 * `agent`: TODO (valid values, prerequisites)
 * `stages`: TODO
+* `stage`: TODO
+* `steps`
 * `post`: TODO (valid sections, e.g. `always`, `success`, `failure`, `changed`)
+
+---
+
+# Jenkins
+
+## The `agent` Section
+
+* The `agent` directive tells Jenkins where and how to execute the Pipeline, or subset thereof.
+* Required for all Pipelines.
+
+.footnote[
+https://www.jenkins.io/doc/pipeline/tour/agents/
+]
+
+---
+
+# Jenkins
+
+## Jenkinsfile: The `steps` Section
+
+> Think of a "step" like a single command which performs a single action. When a step succeeds it moves onto the next step. When a step fails to execute correctly the Pipeline will fail.
+
+* On Linux, BSD, and Mac OS (Unix-like) systems, the `sh` step is used to execute a shell command in a Pipeline.
+* Windows-based systems should use the `bat` step for executing batch commands.
+* May include wrapper steps like `retry` and `timeout`
+
+.footnote[
+https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/
+]
+
+---
+
+# Jenkins
+
+## Jenkinsfile: The `post` Section
+
+* Used to run clean-up steps or perform actions based on the outcome of the Pipeline.
+
+.footnote[
+https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/
+]
+
