@@ -1,4 +1,4 @@
-title: CI / CD with Liferay 
+title: CI/CD with Liferay
 class: animation-fade
 layout: true
 
@@ -10,8 +10,17 @@ layout: true
 
 class: impact
 
+.logo[<img src="images/liferay-waffle.svg">]
+
+## Work in Progress
+
 # {{title}}
-christian.berndt@liferay.com 
+
+christian.berndt@liferay.com
+
+.date[
+  Frankfurt am Main, 20 November 2020
+]
 
 ---
 
@@ -29,7 +38,7 @@ class: agenda
 title: Concepts and Terms 
 layout: true
 
-###.breadcrumbs[CI / CD › Concepts and Terms]
+###.breadcrumbs[CI/CD › Concepts and Terms]
 
 .bottom-bar[
   {{title}}
@@ -47,7 +56,7 @@ layout: true
 
 class: agenda
 
-# .inner[CI / CD]
+# .inner[CI/CD with Liferay]
 
 .items[
 1. Concepts and Terms 
@@ -59,7 +68,7 @@ class: agenda
 title: Tools 
 layout: true
 
-###.breadcrumbs[CI / CD › Tools]
+###.breadcrumbs[CI/CD › Tools]
 
 .bottom-bar[
   {{title}}
