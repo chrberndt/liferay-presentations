@@ -14,11 +14,10 @@ $text-light       : $light;
 $code-background  : #EFEFEF;
 // $code-background  : #F8F8F8;
 $overlay          : transparentize(#000, .5);
-$font-size        : 28px;
-$font             : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-// $font             : Arial, Helvetica, sans-serif; 
-$font-title            : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-// $font-title       : Arial, Helvetica, sans-serif;
+$font-size        : auto;
+$font             : 'Source Sans Pro',Tahoma,'Trebuchet MS',sans-serif;
+$font-title       : 'Source Sans Pro',Tahoma,'Trebuchet MS',sans-serif;
+//$font-title            : -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 
 $font-fixed       : 'Lucida Console', Monaco, monospace;
 $margin           : 20px;
@@ -109,10 +108,11 @@ blockquote {
   color: $text-light;
 
   h1 {
-    background: linear-gradient(270deg, #0b63ce 0%, #134194 100%);
+    background: linear-gradient(270deg, #0B63CE 0%, #134194 100%) 100% 100%;
+    // background: linear-gradient(270deg, #0b63ce 0%, #134194 100%);
     color: $text-light;
-    font-size: 4rem !important;
-    font-weight: 300;
+    font-size: 3rem !important;
+    font-weight: 600;
     height: 100%;
     left: 0;
     margin-top: 0;
@@ -141,6 +141,7 @@ blockquote {
 
   .items {
     left: 50%;
+    font-weight: 600;
 
     ol, ul {
       margin: 0 0 0 50%;
@@ -153,14 +154,14 @@ blockquote {
 
   li {
     color: $tertiary;
-    font-size: 1.75rem;
+    font-size: 2rem;
     list-style: none;
     margin-left: 1.25rem;
     margin-bottom: .5rem;
 
     .active {
       color: $text-dark;
-      font-weight: 500;
+      font-weight: 600;
       margin-left: -1.25rem;
 
       &::before {
@@ -192,19 +193,49 @@ h3 .breadcrumbs {
 }
 
 .impact {
-  background: linear-gradient(270deg, rgb(11, 99, 206) 0%, rgb(19, 65, 148) 100%);
-  // background-color: $primary;
   vertical-align: middle;
-  text-align: center;
-  &, h1, h2 { color: $text-light; }
-  h1 { 
-    font-size: 4rem !important;
-    font-weight: 300;
+  padding-left: 16rem;
+  &, h1, h2 { color: $text-dark; }
+  h1 {
+    font-size: 5.375rem !important;
+    // font-size: 4rem !important;
+    font-weight: 700;
+    // font-weight: 300;
     line-height: 1.2;
   }
   h2 {
-    font-size: 5.5rem;
+    font-size: 1.25rem !important;
+    color: #134194;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+  }
+  p {
+    color: #0B63CE;
+    font-size: 1.563rem;
+    font-weight: 600;
+  }
+
+  .date {
     font-weight: 300;
+    font-style: italic;
+    p {
+      color: $text-dark;
+    }
+  }
+  .logo {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    align-items: center;
+    background-color: #f3f5f9;
+    padding: 0 4rem;
+    img {
+      background-color: #fff;
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
 
