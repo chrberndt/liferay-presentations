@@ -49,7 +49,6 @@ layout: true
 1. Docker Volumes 
 1. Essential Docker Commands
 1. docker-compose
-1. Essential Docker Commands
 
 ---
 
@@ -186,7 +185,8 @@ local               my-vol
 | `docker container ls`                  |                    | List running containers                     |               
 | `docker container ls --all`            |                    | List all containers                         |               
 | `docker container ls -aq`              |                    | List all containers in quiet mode           |               
-| `docker container rm <container-id>`   | &nbsp;&nbsp;&nbsp; | Remove a container with id `<container-id>` |
+| `docker container rm <container-id>`   |                    | Remove a container with id `<container-id>` |
+| `docker logs -f <container-id>`        | &nbsp;&nbsp;&nbsp; | Display (and follow) a container's log      |
 
 ---
 
