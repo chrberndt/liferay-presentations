@@ -100,6 +100,7 @@ layout: true
 * Jenkins Pipeline
 * Jenkinsfile
 * Plugins
+* Handling Credentials
 
 ---
 
@@ -167,7 +168,7 @@ pipeline {
 
 # Jenkins
 
-## The `agent` Section
+## Jenkinsfile: The `agent` Section
 
 * Tells Jenkins where and how to execute the Pipeline, or subset thereof.
 * Required for all Pipelines.
@@ -226,3 +227,14 @@ https://www.jenkins.io/doc/pipeline/tour/environment/
 
 * Jenkins → Manage Jenkins → System Configuration → Manage Plugins
 
+---
+
+# Jenkins
+
+## Handling Credentials
+
+* TODO
+
+.footnote[
+https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#handling-credentials
+]
