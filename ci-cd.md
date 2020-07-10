@@ -99,6 +99,7 @@ layout: true
 
 * Jenkins Pipeline
 * Jenkinsfile
+* Plugins
 
 ---
 
@@ -156,7 +157,7 @@ pipeline {
 
 ## Jenkinsfile: Sections
 
-* `agent`: TODO (valid values, prerequisites)
+* `agent`: Tells Jenkins where and how to execute the Pipeline
 * `stages`: TODO
 * `stage`: TODO
 * `steps`
@@ -168,8 +169,10 @@ pipeline {
 
 ## The `agent` Section
 
-* The `agent` directive tells Jenkins where and how to execute the Pipeline, or subset thereof.
+* Tells Jenkins where and how to execute the Pipeline, or subset thereof.
 * Required for all Pipelines.
+* Default types: `[any, label, none]`
+* Provided by Plugins: `docker` (requires *Docker* and *Docker Pipeline* plugins to be installed)
 
 .footnote[
 https://www.jenkins.io/doc/pipeline/tour/agents/
@@ -215,4 +218,11 @@ https://www.jenkins.io/doc/pipeline/tour/running-multiple-steps/
 https://www.jenkins.io/doc/pipeline/tour/environment/
 ]
 
+---
+
+# Jenkins
+
+## Plugins Installation
+
+* Jenkins → Manage Jenkins → System Configuration → Manage Plugins
 
