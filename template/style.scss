@@ -86,6 +86,9 @@ blockquote {
   padding: 1em 2em;
   color: $text-dark;
   background-size: cover;
+  h2 {
+    font-weight: 600 !important;
+  }
 }
 
 .remark-slide-number {
