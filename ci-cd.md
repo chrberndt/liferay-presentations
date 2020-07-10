@@ -101,6 +101,7 @@ layout: true
 * Jenkinsfile
 * Plugins
 * Handling Credentials
+* Deployments
 
 ---
 
@@ -237,4 +238,16 @@ https://www.jenkins.io/doc/pipeline/tour/environment/
 
 .footnote[
 https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#handling-credentials
+]
+
+---
+
+# Jenkins
+
+## Deployments
+
+* TODO
+
+.footnote[
+https://www.jenkins.io/doc/pipeline/tour/deployment/
 ]
