@@ -168,7 +168,6 @@ layout: true
 
 - TODO: Screenshot, Visually appealing One Pager
 
-
 ---
 
 # Client-Side Javascript Widgets
@@ -430,6 +429,7 @@ layout: true
 * Using Javascript
 * Make the theme configurable
 * Creating reusable themelets
+* Using Stylebooks
 
 ---
 
@@ -1290,6 +1290,86 @@ Extending a themelet will add a themelet dependency like the following to your t
 
 ---
 
+# Themes
+
+## Stylebooks
+
+* See: https://loop.liferay.com/home/-/loop/feed/21480522 (7.3+)
+
+---
+
+class: agenda
+
+# .inner[Liferay Front-End Development]
+
+.items[
+1. Customizing Liferay's UI
+1. Frameworks and Tools
+1. Theme Development
+1. .active[Page Layouts]
+1. Web-Content Templates
+1. Widget Display Templates
+1. Fragment Development
+1. Client-Side JS Widgets
+]
+
+---
+
+title: Liferay Front-End Development
+layout: true
+
+###.breadcrumbs[Liferay Front-End Development › Page Layouts]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Page Layouts
+
+## Overview
+
+* TODO
+
+---
+
+class: agenda
+
+# .inner[Liferay Front-End Development]
+
+.items[
+1. Customizing Liferay's UI
+1. Frameworks and Tools
+1. Theme Development
+1. Page Layouts
+1. .active[Web-Content Templates]
+1. Widget Display Templates
+1. Fragment Development
+1. Client-Side JS Widgets
+]
+
+---
+
+title: Liferay Front-End Development
+layout: true
+
+###.breadcrumbs[Liferay Front-End Development › Web-Content Templates]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Web-Content Templates
+
+## Overview
+
+* TODO
+
+---
+
 class: agenda
 
 # .inner[Liferay Front-End Development]
@@ -1400,6 +1480,14 @@ layout: true
 * Testimonials
 * Event and campaign teasers
 * Customizable carousels
+
+---
+
+# Fragment Development
+
+## Manage Style Settings (7.3+)
+
+* See: https://loop.liferay.com/home/-/loop/feed/21482877
 
 ---
 
