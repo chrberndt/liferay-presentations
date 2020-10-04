@@ -1485,6 +1485,25 @@ layout: true
 
 # Fragment Development
 
+## Using Freemarker
+
+* Freemarker supported: https://issues.liferay.com/browse/LPS-95736
+* Requires alternative Freemarker syntax, see: https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360028726832-Page-Fragments
+]
+---
+
+# Fragment Development
+
+## Using Freemarker: An Example
+
+* TODO
+
+---
+# Fragment Development
+
 ## Manage Style Settings (7.3+)
 
 * See: https://loop.liferay.com/home/-/loop/feed/21482877
