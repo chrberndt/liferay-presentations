@@ -1,4 +1,4 @@
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 class: animation-fade
 layout: true
 
@@ -16,7 +16,7 @@ class: impact
 
 # {{title}}
 
-christian.berndt@liferay.com 
+christian.berndt@liferay.com
 
 .date[
   Frankfurt am Main, 20 November 2020
@@ -30,7 +30,8 @@ class: agenda
 
 .items[
 * .active[Terms and Concepts]
-* Testing Methodology 
+* Dockerized Development
+* Testing Methodology
 * Tools and Frameworks
 * Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
@@ -39,7 +40,7 @@ class: agenda
 
 ---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Terms and Concepts]
@@ -92,7 +93,7 @@ layout: true
 * 2009: _The Scrum Guide_ (latest revision November 2017)
 
 .footnote[
-Source: https://en.wikipedia.org/wiki/Scrum_(software_development) 
+Source: https://en.wikipedia.org/wiki/Scrum_(software_development)
 ]
 
 ---
@@ -103,7 +104,7 @@ Source: https://en.wikipedia.org/wiki/Scrum_(software_development)
 
 > A set of practices that combines software development (*Dev*) and IT operations (*Ops*).
 
-* 
+*
 
 .footnote[
 Source: https://en.wikipedia.org/wiki/DevOps
@@ -115,9 +116,11 @@ Source: https://en.wikipedia.org/wiki/DevOps
 
 ## DevOps Values
 
+* TODO
 
+---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Agenda]
@@ -134,7 +137,8 @@ class: agenda
 
 .items[
 * Terms and Concepts
-* .active[Testing Methodology] 
+* .active[Dockerized Development]
+* Testing Methodology
 * Tools and Frameworks
 * Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
@@ -143,7 +147,80 @@ class: agenda
 
 ---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
+layout: true
+
+###.breadcrumbs[Agile Development with Liferay › Dockerized Development]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Dockerized Development
+
+## Benefits of Dockerized Development
+
+* Identical development environment for all team members
+* Reduced onboarding time for new team members
+
+.footnote[
+  https://www.docker.com/blog/getting-started-with-docker-using-node-jspart-i/
+
+  https://www.docker.com/blog/getting-started-with-docker-using-node-part-ii/
+]
+
+---
+
+# Dockerized Development
+
+## Liferay Docker Workspace
+
+* An easy way to integrate Docker into your development workflow
+* Comprises a number of Docker related Gradle Tasks 
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
+]
+
+---
+
+# Dockerized Development
+
+## Liferay Docker Workspace: Gradle Tasks
+
+| Task | | Description |
+|-|-|-|
+|`buildDockerImage`| | Builds the Docker image with all modules/configurations deployed. |
+|`cleanDockerImage`| | |
+|`createDockerContainer`| | Creates a Docker container from the Liferay DXP image and mounts the workspace’s `/build/docker` folder to the container’s `/etc/liferay` folder. |
+|`createDockerfile`| | Creates a `Dockerfile` to build the Docker image. |
+|`dockerDeploy`| | Deploys the project to the container’s `deploy` folder by copying the project archive file to workspace’s `build/docker/deploy` folder. This command can also be executed from workspace’s root folder to deploy all projects and copy all Docker configurations (i.e., from the `configs/common` and configs/docker folders) to the container.|
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
+]
+
+---
+
+class: agenda
+
+# .inner[Agile Development with Liferay]
+
+.items[
+* Terms and Concepts
+* Dockerized Development
+* .active[Testing Methodology]
+* Tools and Frameworks
+* Configure Liferay Integration Tests
+* Setup a Continous Integration Pipeline
+* Setup a Continous Delivery Pipeline
+]
+
+---
+
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Testing Methodology]
@@ -159,7 +236,7 @@ layout: true
 ## Introduction
 
 * Testing is an essential phase of any development methodology / project.
-* Testing applies to all stages of the Software Development Lifecycle (SDL)
+* Testing applies to all stages of the Software Development Lifecycle (SDLC)
 
 ---
 
@@ -175,7 +252,7 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 
 ---
 
-# Testing Methodology 
+# Testing Methodology
 
 ## Types of Tests
 
@@ -216,7 +293,8 @@ class: agenda
 
 .items[
 * Terms and Concepts
-* Testing Methodology 
+* Dockerized Development
+* Testing Methodology
 * .active[Tools and Frameworks]
 * Configure Liferay Integration Tests
 * Setup a Continous Integration Pipeline
@@ -225,7 +303,7 @@ class: agenda
 
 ---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Tools and Frameworks]
@@ -285,6 +363,7 @@ class: agenda
 
 .items[
 * Terms and Concepts
+* Dockerized Development
 * Testing Methodology
 * Tools and Frameworks
 * .active[Configure Liferay Integration Tests]
@@ -294,7 +373,7 @@ class: agenda
 
 ---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Configure Liferay Integration Tests]
@@ -311,7 +390,7 @@ layout: true
 
 * Create a Test Module
 * Configure Test Dependencies
-* Determine Test Dependency Versions 
+* Determine Test Dependency Versions
 
 ---
 
@@ -403,6 +482,7 @@ class: agenda
 
 .items[
 * Terms and Concepts
+* Dockerized Development
 * Testing Methodology
 * Tools and Frameworks
 * Configure Liferay Integration Tests
@@ -435,6 +515,7 @@ class: agenda
 
 .items[
 * Terms and Concepts
+* Dockerized Development
 * Testing Methodology
 * Tools and Frameworks
 * Configure Liferay Integration Tests
@@ -444,7 +525,7 @@ class: agenda
 
 ---
 
-title: Agile Development with Liferay 
+title: Agile Development with Liferay
 layout: true
 
 ###.breadcrumbs[Agile Development with Liferay › Setup a Continous Delivery Pipeline]
@@ -458,7 +539,7 @@ layout: true
 # Setup a Continous Delivery Pipeline
 
 * ...
-  
+ 
 ---
 
 class: agenda
