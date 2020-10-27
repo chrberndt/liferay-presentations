@@ -159,6 +159,7 @@ layout: true
 ## Introduction
 
 * Testing is an essential phase of any development methodology / project.
+* Testing applies to all stages of the Software Development Lifecycle (SDL)
 
 ---
 
