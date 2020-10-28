@@ -188,15 +188,33 @@ layout: true
 
 # Dockerized Development
 
-## Liferay Docker Workspace: Gradle Tasks
+## Liferay Docker Workspace: Gradle Tasks I
 
-| Task | | Description |
+| | | |
 |-|-|-|
 |`buildDockerImage`| | Builds the Docker image with all modules/configurations deployed. |
-|`cleanDockerImage`| | |
+|`cleanDockerImage`| | TODO |
 |`createDockerContainer`| | Creates a Docker container from the Liferay DXP image and mounts the workspace’s `/build/docker` folder to the container’s `/etc/liferay` folder. |
 |`createDockerfile`| | Creates a `Dockerfile` to build the Docker image. |
 |`dockerDeploy`| | Deploys the project to the container’s `deploy` folder by copying the project archive file to workspace’s `build/docker/deploy` folder. This command can also be executed from workspace’s root folder to deploy all projects and copy all Docker configurations (i.e., from the `configs/common` and configs/docker folders) to the container.|
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
+]
+
+---
+
+# Dockerized Development
+
+## Liferay Docker Workspace: Gradle Tasks II
+
+| | | |
+|-|-|-|
+|`logsDockerContainer`| | Attach console to the Liferay container and print the portal runtime's logs. You can exit log tracking mode while maintaining a running container (e.g., [`Ctrl` / `Command`] + C). |
+|`pullDockerImage`| | Pulls the Docker image.|
+|`removeDockerContainer`| | Removes the container from Docker’s system. |
+|`startDockerContainer`| | Starts the Docker container. |
+|`stopDockerContainer`| | Stops the Docker container.|
 
 .footnote[
   https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
