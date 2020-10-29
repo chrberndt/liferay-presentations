@@ -1,4 +1,4 @@
-title: Liferay With Docker 
+title: Liferay With Docker
 class: animation-fade
 layout: true
 
@@ -16,7 +16,7 @@ class: impact
 
 # {{title}}
 
-christian.berndt@liferay.com 
+christian.berndt@liferay.com
 
 .date[
   Frankfurt am Main, 20 November 2020
@@ -30,12 +30,12 @@ class: agenda
 
 .items[
 1. .active[Docker Basics]
-1. Liferay Workspace 
+1. Using Liferay Docker Images
 ]
 
 ---
 
-title: Liferay With Docker 
+title: Liferay With Docker
 layout: true
 
 ###.breadcrumbs[Liferay With Docker › Docker Basics]
@@ -48,14 +48,14 @@ layout: true
 
 # Docker Basics
 
-## Overview 
+## Overview
 
 1. Docker Concepts & Benefits
 1. Docker Images and Containers
 1. The Docker Engine
 1. Docker Containers and Virtual Machines
 1. Essential Dockerfile Commands
-1. Docker Volumes 
+1. Docker Volumes
 1. Essential Docker Commands
 1. docker-compose
 
@@ -71,7 +71,7 @@ layout: true
 
 # Docker Basics
 
-## Docker Images and Containers 
+## Docker Images and Containers
 
 * An __Image__ is an executable package that includes everything needed to run an application
 * A __Container__ is a runtime instance of an image
@@ -94,7 +94,7 @@ layout: true
 
 ---
 
-# Docker Basics 
+# Docker Basics
 
 ## Essential Dockerfile Commands
 
@@ -122,7 +122,7 @@ VOLUME ["/data"]                              # Create a mount point with the sp
 USER <user>[:<group>] or <UID>[:<GID>]        # Set the user name (or UID) and optionally the user group (or GID)
                                               # to use when running the image
 
-WORKDIR /path/to/workdir                      # Set the working directory for any RUN, CMD, ENTRYPOINT, 
+WORKDIR /path/to/workdir                      # Set the working directory for any RUN, CMD, ENTRYPOINT,
                                               # COPY and ADD instructions that follow
 ```
 .footnote[
@@ -131,9 +131,9 @@ WORKDIR /path/to/workdir                      # Set the working directory for an
 
 ---
 
-# Docker Volumes 
+# Docker Volumes
 
-## Introduction 
+## Introduction
 
 * Stored in a part of the host filesystem which is *managed by Docker* (`/var/lib/docker/volumes/` on Linux)
 * Non-Docker processes should not modify this part of the filesystem
@@ -181,19 +181,19 @@ local               my-vol
 
 # Docker Basics
 
-## Essential Docker Commands 
+## Essential Docker Commands
 
 |                                        |                    |                                             |
 | -------------------------------------- |--------------------|---------------------------------------------|
 | `docker`                               |                    | List Docker CLI commands                    |
 | `docker <cmd> --help`                  |                    | Explain `<cmd>`                             |
-| `docker --version` or `docker version` |                    | Display Docker version info                 |               
-| `docker info`                          |                    | Display system-wide information             |               
-| `docker run IMAGE`                     |                    | Run a command in a new container            |               
-| `docker image ls`                      |                    | List images                                 |               
-| `docker container ls`                  |                    | List running containers                     |               
-| `docker container ls --all`            |                    | List all containers                         |               
-| `docker container ls -aq`              |                    | List all containers in quiet mode           |               
+| `docker --version` or `docker version` |                    | Display Docker version info                 |              
+| `docker info`                          |                    | Display system-wide information             |              
+| `docker run IMAGE`                     |                    | Run a command in a new container            |              
+| `docker image ls`                      |                    | List images                                 |              
+| `docker container ls`                  |                    | List running containers                     |              
+| `docker container ls --all`            |                    | List all containers                         |              
+| `docker container ls -aq`              |                    | List all containers in quiet mode           |              
 | `docker container rm <container-id>`   |                    | Remove a container with id `<container-id>` |
 | `docker logs -f <container-id>`        | &nbsp;&nbsp;&nbsp; | Display (and follow) a container's log      |
 
@@ -231,7 +231,7 @@ local               my-vol
 | -------------------------------------- |--------------------|---------------------------------------------|
 | `docker-compose`                       | &nbsp;&nbsp;&nbsp; | List docker-compose CLI commands            |
 | `docker-compose <cmd> --help`          |                    | Explain `<cmd>`                             |
-| `docker-compose build`                 |                    | Build or rebuild services                   |               
+| `docker-compose build`                 |                    | Build or rebuild services                   |              
 | `docker-compose up`                    |                    | Builds, (re)creates, starts, and attaches to containers for a serviceRun a command in a new container |
 | `docker-compose down`                  |                    | Stops containers and removes containers, networks, volumes, and images created by `up`. |
 
@@ -246,15 +246,15 @@ class: agenda
 
 .items[
 1. Docker Basics
-1. .active[Liferay Workspace]
+1. .active[Using Liferay Docker Images]
 ]
 
 ---
 
-title: Liferay With Docker 
+title: Liferay With Docker
 layout: true
 
-###.breadcrumbs[Liferay With Docker › Liferay Workspace]
+###.breadcrumbs[Liferay With Docker › Using Liferay Docker Images]
 
 .bottom-bar[
   {{title}}
@@ -262,8 +262,20 @@ layout: true
 
 ---
 
-# Liferay Workspace 
+# Using Liferay Docker Images
 
 ## Overview
 
-1. TODO
+1. Liferay Docker Container Basics
+1. Liferay Container Lifecylce and API
+1. Configuring Liferay Containers
+1. Installing Apps and Other Artifacts to Liferay Containers
+1. Patching DXP in Docker
+1. Running Scripts in Liferay Containers
+1. Providing Files to the Liferay Container
+1. Upgrading to a New Liferay Docker Image
+
+.footnote[
+  https://learn.liferay.com/dxp/7.x/en/installation-and-upgrades/installing-liferay/using_liferay_docker_images.html
+]
+
