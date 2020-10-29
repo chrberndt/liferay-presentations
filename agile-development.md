@@ -275,15 +275,6 @@ class: agenda
 .items[
 * Terms and Concepts
 * Dockerized Development
----
-
-class: agenda
-
-# .inner[Agile Development with Liferay]
-
-.items[
-* Terms and Concepts
-* Dockerized Development
 * .active[Testing Methodology]
 * Tools and Frameworks
 * Configure Liferay Integration Tests
