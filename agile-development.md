@@ -178,11 +178,19 @@ layout: true
 ## Liferay Docker Workspace
 
 * An easy way to integrate Docker into your development workflow
-* Comprises a number of Docker related Gradle Tasks 
+* Comprises a number of Docker related Gradle Tasks
 
 .footnote[
   https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
 ]
+
+---
+
+# Dockerized Development
+
+## Usage Scenarios
+
+* Easily package your solution as Docker container
 
 ---
 
@@ -220,6 +228,53 @@ layout: true
   https://help.liferay.com/hc/en-us/articles/360029147591-Leveraging-Docker
 ]
 
+---
+
+# Dockerized Development
+
+## Configuring a Docker Container
+
+* TODO
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360028834432-Configuring-a-Docker-Container
+]
+
+---
+
+# Dockerized Development
+
+## Building a Custom Docker Image
+
+* TODO
+
+.footnote[
+  https://help.liferay.com/hc/en-us/articles/360029147611-Building-a-Custom-Docker-Image
+]
+
+---
+
+# Dockerized Development
+
+## Using `docker-compose`
+
+* Best resource: Iacopo Colonelli's Post & repository
+
+.footnote[
+  https://liferay.dev/blogs/-/blogs/liferay-and-docker-dockerised-liferay-workspace
+
+  https://github.com/GlassOfWhiskey/docker-liferay-workspace-example
+]
+
+---
+
+class: agenda
+
+# .inner[Agile Development with Liferay]
+
+.items[
+* Terms and Concepts
+* Dockerized Development
 ---
 
 class: agenda
@@ -557,7 +612,7 @@ layout: true
 # Setup a Continous Delivery Pipeline
 
 * ...
- 
+
 ---
 
 class: agenda
