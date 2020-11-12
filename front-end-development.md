@@ -1503,6 +1503,218 @@ layout: true
 
 .col-6[
 ]
+
+---
+
+# Fragment Development
+
+## Setup Your Environment
+
+* Install Fragments Toolkit
+* Start Liferay
+* Create, Deploy, and Review Fragments
+
+---
+
+# Fragment Development
+
+.col-6[
+
+## 1. Create a New Fragment Project
+
+> Run `yo liferay-fragments`
+
+```bash
+berndt@x270:~$ yo liferay-fragments
+
+    / /   /  _/ ____/ ____/ __ \/   \ \/ /
+  / /    / // /_  / __/ / /_/ / /| |\  /
+  / /____/ // __/ / /___/ _, _/ ___ |/ /
+/_____/___/_/   /_____/_/ |_/_/  |_/_/
+
+? Project name Sample Liferay Fragments
+? Add sample content? n
+
+Creating directory
+   create src/.gitkeep
+   create .editorconfig
+   create .gitignore
+   create package.json
+   create README.md
+
+Done!
+You're ready to create fragments.
+```
+]
+
+--
+
+.col-6[
+
+## 2. Create a New Collection
+
+> Run `yarn run add-collection`
+
+```bash
+berndt@x270:sample-liferay-fragments$ yarn run add-collection
+yarn run v1.22.5
+warning package.json: No license field
+$ yo liferay-fragments:collection
+? Collection name (required) Custom Fragment Collection
+? Collection description (optional) A collection of custom fragments
+   create src/custom-fragment-collection/collection.json
+Done in 49.25s.
+```
+]
+
+---
+
+# Fragment Development
+
+.col-6[
+
+## 3. Create a New Fragment
+
+> Run `yarn run add-fragment`
+
+```bash
+berndt@x270:sample-liferay-fragments$ yarn run add-fragment
+yarn run v1.22.5
+warning package.json: No license field
+$ yo liferay-fragments:fragment
+? Minimum liferay version you want fragments to be compatible with (e.g. 7.3.0) 7.3.10
+? Fragment name (required) Keyvisual
+? Choose a collection (custom-fragment-collection)
+   create src/custom-fragment-collection/keyvisual/index.html
+   create src/custom-fragment-collection/keyvisual/main.js
+   create src/custom-fragment-collection/keyvisual/styles.css
+   create src/custom-fragment-collection/keyvisual/fragment.json
+   create src/custom-fragment-collection/keyvisual/configuration.json
+Done in 37.89s.
+```
+]
+
+--
+
+.col-6[
+
+## 4. Deploy to Server
+
+> Run `yarn run import:watch`
+
+```bash
+berndt@x270:sample-liferay-fragments$ yarn run import:watch
+yarn run v1.22.5
+warning package.json: No license field
+$ yo liferay-fragments:import --watch
+? Liferay host & port http://localhost:8080
+? Username test@liferay.com
+? Password [hidden]
+
+Checking connection...
+Connection successful
+
+? Company ID liferay.com
+? Group ID (Use arrow keys)
+  Global
+❯ Liferay DXP
+
+```
+
+]
+
+
+---
+
+# Fragment Development
+
+## Anatomy of a Fragments Project
+
+.col-6[
+
+```bash
+sample-liferay-fragments/
+├── node_modules
+├── package.json
+├── README.md
+├── src
+│   └── custom-fragment-collection
+│       ├── collection.json
+│       └── keyvisual
+│           ├── configuration.json
+│           ├── fragment.json
+│           ├── index.html
+│           ├── main.js
+│           └── styles.css
+└── yarn.lock
+```
+
+| | | |
+|-|-|-|
+|`package.json`|&nbsp;&nbsp;| Node package configuration |
+|`src`| | Sources of the fragments project |
+|`yarn.lock`| | Lock file for yarn (exact versions of declared dependencies) |
+
+]
+
+---
+
+# Fragment Development
+
+## Anatomy of a Fragments Project: `package.json`
+
+.col-9[
+
+```json
+{
+  "name": "sample-liferay-fragments",
+  "description": "Liferay Fragments project",
+  "version": "1.0.0",
+
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 6.0.0"
+  },
+
+  "keywords": [
+    "liferay",
+    "liferay-fragments"
+  ],
+
+  "scripts": {
+    "add-collection": "yo liferay-fragments:collection",
+    "add-fragment": "yo liferay-fragments:fragment",
+    "add-fragment-composition": "yo liferay-fragments:fragment-composition",
+    "add-page-template": "yo liferay-fragments:page-template",
+    "compress": "yo liferay-fragments:compress",
+    "export": "yo liferay-fragments:export",
+    "import": "yo liferay-fragments:import",
+    "import:watch": "yo liferay-fragments:import --watch",
+    "preview": "yo liferay-fragments:preview"
+  }
+}
+```
+]
+
+---
+
+# Fragment Development
+
+## Propagating Page Fragment Changes
+
+.col-6[
+### Manually Propagating Page Fragment Changes
+]
+
+.col-6[
+### Automatically Propagating Page Fragment Changes
+]
+
+
+.footnote[
+  https://learn.liferay.com/dxp/7.x/en/site-building/displaying-content/using-fragments/propagating-page-fragment-changes.html#manually-propagating-page-fragment-changes
+]
+
 ---
 
 # Fragment Development
