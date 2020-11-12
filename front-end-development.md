@@ -7,11 +7,19 @@ layout: true
 ]
 
 ---
-
 class: impact
 
+.logo[<img src="images/liferay-waffle.svg">]
+
+## Work in Progress
+
 # {{title}}
+
 christian.berndt@liferay.com
+
+.date[
+  Frankfurt am Main, 20 November 2020
+]
 
 ---
 
@@ -1469,18 +1477,32 @@ layout: true
 * Content Pages support Workflows
 * ...
 
+.footnote[
+  https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/building-and-managing-content-pages/content-pages-overview.html
+]
+
 ---
 
 # Fragment Development
 
-## Fragment Use Cases
+## Fragment Examples
 
-* Keyvisuals
-* Call to action
-* Testimonials
-* Event and campaign teasers
-* Customizable carousels
+* Keyvisual
+* Carousel
+* Accordion
+* Testimonial
 
+---
+
+# Fragment Development
+
+## A Simple Example: Keyvisual Fragment
+
+.col-6[
+]
+
+.col-6[
+]
 ---
 
 # Fragment Development
