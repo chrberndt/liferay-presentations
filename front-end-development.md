@@ -1487,22 +1487,72 @@ layout: true
 
 ## Fragment Examples
 
-* Keyvisual
-* Carousel
-* Accordion
-* Testimonial
+.col-4[
+  .center[<img src="images/front-end-development/slider-fragment.png" width="95%">]
+
+  .center[<img src="images/front-end-development/features-fragment.png" width="95%">]
+]
+
+.col-4[
+  .center[<img src="images/front-end-development/highlights-fragment.png" width="95%">]
+]
 
 ---
 
 # Fragment Development
 
-## A Simple Example: Keyvisual Fragment
+## A Simple Example: Banner Center
 
-.col-6[
-]
+```html
+<div class="banner py-6 py-md-8 text-white text-break" data-lfr-background-image-id="banner">
+  <div class="container my-lg-6">
+    <div class="row">
+      <div class="col-12 col-md-8 col-xl-6">
+        <h1
+*          data-lfr-editable-id="01-title"
+*          data-lfr-editable-type="rich-text"
+        >
+          Banner Title Example
+        </h1>
 
-.col-6[
-]
+*        <div class="mb-4 lead" data-lfr-editable-id="02-subtitle" data-lfr-editable-type="rich-text">
+          <p>
+            This is a simple banner component that you can use when
+            you need extra attention to featured content or
+            information.
+          </p>
+        </div>
+
+        <a
+          class="btn btn-primary"
+*          data-lfr-editable-id="03-link"
+*          data-lfr-editable-type="link"
+*          href=""
+*          id="fragment-${fragmentEntryLinkNamespace}-03-link"
+        >
+          Go Somewhere
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+---
+
+# Fragment Development
+
+## A Simple Example: Banner Center
+
+* TODO: renders as
+
+---
+
+# Fragment Development
+
+## A Simple Example: Banner Center
+
+* TODO: can be edited as follows 
 
 ---
 
@@ -1714,6 +1764,30 @@ sample-liferay-fragments/
 .footnote[
   https://learn.liferay.com/dxp/7.x/en/site-building/displaying-content/using-fragments/propagating-page-fragment-changes.html#manually-propagating-page-fragment-changes
 ]
+
+---
+
+# Fragment Development
+
+## Anatomy of a Fragment: `configuration.json`
+
+.col-6[
+]
+
+.col-6[
+]
+
+.footnote[
+  https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference.html
+]
+
+---
+
+# Fragment Development
+
+## Best Practices
+
+* Use `${fragmentEntryLinkNamespace}` in html `id` attributes
 
 ---
 
