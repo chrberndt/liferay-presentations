@@ -1772,13 +1772,68 @@ sample-liferay-fragments/
 ## Anatomy of a Fragment: `configuration.json`
 
 .col-6[
+```json
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "int",
+          "defaultValue": "3",
+          "description": "number-of-slides",
+          "label": "Number Of Slides",
+          "name": "numberOfSlides",
+          "type": "text",
+          "typeOptions": {
+            "validation": {
+              "min": 1,
+              "type": "number"
+            }
+          }
+        },
+        {
+          "dataType": "object",
+          "label": "text-color",
+          "name": "textColor",
+          "type": "colorPalette"
+        }
+      ]
+    }
+  ]
+}
+```
 ]
 
 .col-6[
+* Defined in JSON
+* Supported input types:
+  * checkbox
+  * colorPalette
+  * itemSelector
+  * select
+  * text
+* Stored as Freemarker context object
+* Processed with Freemarker
 ]
 
 .footnote[
   https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference.html
+]
+
+---
+
+# Fragment Development
+
+## Anatomy of a Fragment: `index.html`
+
+.col-6[
+* TODO: add source
+]
+
+.col-6[
+* Define markup
+* Define editable areas
+* Process configuration
 ]
 
 ---
