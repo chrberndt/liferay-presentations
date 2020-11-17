@@ -1576,10 +1576,10 @@ layout: true
 |`yarn run add-fragment` | | Add a new Fragment |
 |`yarn run add-fragment-composition` | | Add a new Fragment composition |
 |`yarn run add-page-template` | | Add a new Page Template |
-|`yarn run compress`| | TODO |
-|`yarn run export`| | Export a collection __from__ a Liferay |
-|`yarn run import`| | Import a collection __into__ Liferay |
-|`yarn run import:watch`| | Import a collection __into__ Liferay in watch mode |
+|`yarn run compress`| | Assemble collection as ZIP archive |
+|`yarn run export`| | Export a collection *from* Liferay |
+|`yarn run import`| | Import a collection *into* Liferay |
+|`yarn run import:watch`| | Import a collection *into* Liferay in watch mode |
 |`yarn run preview`| | Preview Fragments |
 
 ---
