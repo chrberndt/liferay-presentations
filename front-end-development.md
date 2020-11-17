@@ -1893,6 +1893,18 @@ sample-liferay-fragments/
 
 # Fragment Development
 
+## Using Fragment Compositions
+
+* TODO
+
+.footnote[
+  See: https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/building-and-managing-content-pages/building-content-pages.html#saving-a-fragment-composition
+]
+
+---
+
+# Fragment Development
+
 ## Best Practices
 
 * Use `${fragmentEntryLinkNamespace}` in html `id` attributes
