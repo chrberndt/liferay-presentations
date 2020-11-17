@@ -1568,6 +1568,24 @@ layout: true
 
 # Fragment Development
 
+## Fragments Toolkit Capabilities
+
+| | | |
+|-|-|-|
+|`yarn run add-collection`| &nbsp;&nbsp; | Add a new Fragments collection |
+|`yarn run add-fragment` | | Add a new Fragment |
+|`yarn run add-fragment-composition` | | Add a new Fragment composition |
+|`yarn run add-page-template` | | Add a new Page Template |
+|`yarn run compress`| | TODO |
+|`yarn run export`| | Export a collection __from__ a Liferay |
+|`yarn run import`| | Import a collection __into__ Liferay |
+|`yarn run import:watch`| | Import a collection __into__ Liferay in watch mode |
+|`yarn run preview`| | Preview Fragments |
+
+---
+
+# Fragment Development
+
 .col-6[
 
 ## 1. Create a New Fragment Project
@@ -1834,6 +1852,41 @@ sample-liferay-fragments/
 * Define markup
 * Define editable areas
 * Process configuration
+]
+
+---
+
+# Fragement Development
+
+## Anatomy of a Fragment: `index.html`
+
+### Defining Editable Areas
+
+.col-6[
+```xml
+<lfr-editable id="image_id" type="image">
+  <img src="placeholder.png" alt="Placeholder">
+</lfr-editable>
+
+<lfr-editable id="link_id" type="link">
+  <a href="#placeholder" target="_blank">Go to placeholder</a>
+</lfr-editable>
+
+<lfr-editable id="html_id" type="html">
+  <h1>Placeholder</h1>
+</lfr-editable>
+
+<lfr-editable id="text_id" type="text">Placeholder</lfr-editable>
+
+<lfr-editable id="rich_text_id" type="rich-text">
+  Placeholder
+</lfr-editable>
+```
+]
+.col-6[
+```html
+<!-- TODO: Process configurations with Freemarker -->
+```
 ]
 
 ---
