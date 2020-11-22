@@ -238,6 +238,18 @@ local               my-vol
 .footnote[
   For the complete reference see: https://docs.docker.com/compose/reference/overview/
 ]
+
+---
+
+# Docker Basics
+
+## Clean Up Commands
+
+```bash
+docker rm $(docker ps -a -q)        # Remove all stopped containers.
+docker image prune -a               # Remove all dangling images.
+```
+
 ---
 
 class: agenda
