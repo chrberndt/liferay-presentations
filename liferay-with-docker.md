@@ -249,6 +249,7 @@ local               my-vol
 docker rm $(docker ps -a -q)        # Remove all stopped containers
 docker image prune -a               # Remove all dangling images
 docker volume prune                 # Remove all unused local volumes
+docker network prune                # Remove all unused networks
 ```
 
 ---
