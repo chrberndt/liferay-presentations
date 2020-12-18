@@ -10,8 +10,16 @@ layout: true
 
 class: impact
 
+.logo[<img src="images/liferay-waffle.svg">]
+
+## Work in Progress
+
 # {{title}}
 christian.berndt@liferay.com 
+
+.date[
+  Frankfurt am Main, 20. März 2021
+]
 
 ---
 
