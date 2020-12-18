@@ -109,7 +109,7 @@ https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner
 
 * TODO
 
---- 
+---
 
 # Using Liferay Upgrade Planner
 
@@ -205,4 +205,8 @@ https://help.liferay.com/hc/en-us/articles/360029147451-Liferay-Upgrade-Planner
 
 * TODO
 
+---
 
+# Upgrading Tasks
+
+see: https://liferay.slack.com/archives/CKWDKQR9V/p1608251649345300
