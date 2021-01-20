@@ -1927,7 +1927,20 @@ sample-liferay-fragments/
 
 ## Using Freemarker: An Example
 
-* TODO
+.col-8[
+```Freemarker
+[#assign req = request.getRequest()]
+[#assign originalRequest = portalUtil.getOriginalServletRequest(req)]
+
+[#if originalRequest.getParameter("p_l_mode")??]
+  [#if originalRequest.getParameter("p_l_mode") == "edit"]
+    <a class="btn btn-lg btn-primary">Add Article</a>
+  [/#if]
+[/#if]
+```
+Display an add button only if the Content Page is in *edit* mode.
+]
+
 
 ---
 # Fragment Development
