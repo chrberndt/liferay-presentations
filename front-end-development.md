@@ -330,6 +330,10 @@ __10.15.1__ with Liferay __7.2.x__
   https://github.com/liferay/liferay-js-themes-toolkit
 
   https://github.com/liferay/liferay-js-themes-toolkit/issues/407
+]
+
+---
+
 # liferay-js-themes-toolkit
 
 ## Overview
