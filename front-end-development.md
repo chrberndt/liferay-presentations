@@ -365,9 +365,9 @@ __10.15.1__ with Liferay __7.2.x__
   ```
 ---
 
-# Frameworks and Tools
+# Liferay Developer Studio
 
-## Liferay Developer Studio
+## Creating a Theme With Developer Studio
 
 1. Create a *Liferay Workspace Project* (or use an existing one):
   ```
@@ -385,9 +385,9 @@ __10.15.1__ with Liferay __7.2.x__
 
 ---
 
-# Frameworks and Tools
+# Blade CLI Theme Template
 
-## Blade CLI Theme Template
+## Creating a Theme With Blade
 
 ### Prerequisities
 
