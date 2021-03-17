@@ -325,6 +325,7 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 * Acceptance Tests
 * Smoke Tests
 * Regression Tests
+* Visual Testing
 
 ---
 
@@ -349,6 +350,47 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 
 ## Example
 
+* TODO
+
+---
+
+# Integration Tests
+
+* TODO
+
+---
+
+# Acceptance Tests
+
+* TODO
+
+---
+
+# Smoke Tests
+
+* TODO
+
+---
+
+# Regression Tests
+
+* TODO
+
+---
+
+# Visual Testing
+
+## Basic Concepts
+
+* TODO
+
+---
+
+# Visual Testing
+
+## Tools and Frameworks
+
+* TODO
 ---
 
 class: agenda
