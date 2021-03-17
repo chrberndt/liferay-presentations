@@ -327,6 +327,10 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 * Regression Tests
 * Visual Testing
 
+.footnote[
+  https://www.selenium.dev/documentation/en/introduction/types_of_testing/
+]
+
 ---
 
 # Unit Tests
@@ -390,7 +394,10 @@ Source: https://en.wikipedia.org/wiki/Unit_testing
 
 ## Tools and Frameworks
 
-* TODO
+* Selenium ([https://www.selenium.dev](https://www.selenium.dev))
+* applitools ([https://applitools.com](https://applitools.com))
+* happo ([https://happo.io](https://happo.io))
+
 ---
 
 class: agenda
