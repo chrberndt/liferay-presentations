@@ -470,6 +470,12 @@ layout: true
 
 ---
 
+# Unit Testing Angular
+
+* TODO
+
+---
+
 class: agenda
 
 # .inner[Agile Development with Liferay]
