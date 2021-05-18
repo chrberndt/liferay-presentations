@@ -519,6 +519,10 @@ my-liferay-theme/
 
 * TODO
 
+.footnote[
+  https://liferay.dev/en/b/site-initializers-101
+]
+
 ---
 
 # Customize Theme Templates
