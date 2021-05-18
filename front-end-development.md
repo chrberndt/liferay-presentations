@@ -33,7 +33,6 @@ class: agenda
 1. Page Layouts
 1. Web-Content Templates
 1. Widget Display Templates
-1. Client-Side JS Widgets
 1. Theme Context Contributor
 1. Theme Contributor
 ]
@@ -61,7 +60,6 @@ layout: true
 * Web-Content Templates
 * Widget Display Templates
 * Fragments
-* Client-Side Javascript Widgets
 * Theme Contributors
 * Theme Context Contributors
 
@@ -211,7 +209,6 @@ class: agenda
 1. Page Layouts
 1. Web-Content Templates
 1. Widget Display Templates
-1. Client-Side JS Widgets
 1. Theme Context Contributor
 1. Theme Contributor
 ]
@@ -314,7 +311,6 @@ class: agenda
 1. .active[Page Layouts]
 1. Web-Content Templates
 1. Widget Display Templates
-1. Client-Side JS Widgets
 1. Theme Context Contributor
 1. Theme Contributor
 ]
@@ -350,7 +346,6 @@ class: agenda
 1. Page Layouts
 1. .active[Web-Content Templates]
 1. Widget Display Templates
-1. Client-Side JS Widgets
 1. Theme Context Contributor
 1. Theme Contributor
 ]
@@ -386,7 +381,6 @@ class: agenda
 1. Page Layouts
 1. Web-Content Templates
 1. .active[Widget Display Templates]
-1. Client-Side JS Widgets
 1. Theme Context Contributor
 1. Theme Contributor
 ]
@@ -436,54 +430,3 @@ layout: true
 ## Exercise: Configure a Lightdesk With Cards
 
 * TODO
-
----
-
-class: agenda
-
-# .inner[Liferay Front-End Development]
-
-.items[
-1. Customizing Liferay's UI
-1. Frameworks
-1. Page Layouts
-1. Web-Content Templates
-1. Widget Display Templates
-1. .active[Client-Side JS Frameworks]
-1. Theme Context Contributor
-1. Theme Contributor
-]
-
----
-
-title: Liferay Front-End Development
-layout: true
-
-###.breadcrumbs[Liferay Front-End Development › Client Side JS Frameworks]
-
-.bottom-bar[
-  {{title}}
-]
-
----
-
-# Client Side JS Frameworks
-
-## Introduction
-
-* Adapt scripts available for all major frameworks (REACT, Angular, Vue.js)
-* ...
-
----
-
-# Client Side JS Frameworks
-
-## Challenges
-
-* Limited Control of the DOM
-* Client-Side Routing
-* Interoperation with Liferay JS
-* Coexistence with other frameworks on the page (Senna, jQuery, ...)
-* Multiple React/Angular/Vue applications on one page
-* Multiple instances of the same app on one page
-
