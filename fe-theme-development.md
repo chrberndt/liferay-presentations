@@ -147,43 +147,6 @@ blade create -t theme my-blade-theme
 ```
 ---
 
-class: agenda
-
-# .inner[Liferay Theme Development]
-
-.items[
-1. Development Environment 
-1. .active[Theme Development Tasks]
-]
-
----
-
-title: Liferay Theme Development
-layout: true
-
-###.breadcrumbs[Liferay Theme Development › Development Environments]
-
-.bottom-bar[
-  {{title}}
-]
-
----
-
-# Theme Development Tasks
-
-## Overview 
-
-* Setup your development environment
-* Implement responsive markup
-* Define styles for logo, images, fonts, and colors
-* Provide default page layouts
-* Using Javascript
-* Make the theme configurable
-* Creating reusable themelets
-* Using Stylebooks
-
----
-
 # Setup Your Development Environment
 
 ## Install Liferay Locally
@@ -194,14 +157,6 @@ layout: true
 1. Startup Liferay with `$LIFERAY_HOME/$TOMCAT_HOME/bin/catalina.sh run`
 1. Deploy the license file
 1. Navigate to `http://localhost:8080` and finish the setup wizard
-
----
-
-# Setup Your Development Environment
-
-## Use a Liferay Cloud Setup
-
-* TODO
 
 ---
 
@@ -264,6 +219,43 @@ berndt@x270$ yo
 
 ---
 
+class: agenda
+
+# .inner[Liferay Theme Development]
+
+.items[
+1. Development Environments
+1. .active[Theme Development Tasks]
+]
+
+---
+
+title: Liferay Theme Development
+layout: true
+
+###.breadcrumbs[Liferay Theme Development › Theme Development Tasks]
+
+.bottom-bar[
+  {{title}}
+]
+
+---
+
+# Theme Development Tasks
+
+## Overview
+
+* Create, Build, and Deploy a Theme
+* Implement responsive markup
+* Define styles for logo, images, fonts, and colors
+* Provide default page layouts
+* Using Javascript
+* Make the theme configurable
+* Creating reusable themelets
+* Using Stylebooks
+
+---
+
 # Create, Build, and Deploy a Theme
 
 ## Overview
@@ -309,7 +301,7 @@ For older versions, please use v8 of the toolkit:
 ```
 ---
 
-# Setup Your Development Environment
+# Create, Build, and Deploy a Theme
 
 ## Create a Theme Project with `yo` (continued)
 
