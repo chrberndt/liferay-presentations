@@ -71,7 +71,7 @@ layout: true
 
 class: agenda
 
-# .inner[Client Side Frameworkst]
+# .inner[Client Side Frameworks]
 
 .items[
 1. Overview
