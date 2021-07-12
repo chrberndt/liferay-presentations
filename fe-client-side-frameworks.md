@@ -97,7 +97,26 @@ layout: true
 
 ## Overview
 
+* Tooling
 * Creating a Liferay React Widget Module 
+
+---
+
+# Tooling
+
+* `deployFast` (see: https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task)
+
+.footnote[
+  https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task
+]
+
+---
+
+# Creating a Liferay React Widget Module
+
+## Retrieve a List of Blog Posts
+
+* See: [https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop](https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop)
 
 ---
 
