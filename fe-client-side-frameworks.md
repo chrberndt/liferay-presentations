@@ -98,7 +98,9 @@ layout: true
 ## Overview
 
 * Tooling
-* Creating a Liferay React Widget Module 
+* Creating a Liferay React Widget Module
+* Embedding a React Component in JSP
+* Using Clay Components
 
 ---
 
@@ -117,6 +119,38 @@ layout: true
 ## Retrieve a List of Blog Posts
 
 * See: [https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop](https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop)
+
+---
+
+# Embedding a React Component in JSP
+
+## Intrdocution
+
+* A common paradigm in Liferay frontend development
+* Useful, for example, to customize default components
+
+---
+
+# Embedding a React Component in JSP
+
+## Implementation Steps
+
+1. Create a Liferay Module Project of type `mvc-portlet`
+1. Configure `Web-ContextPath` in `bnd.bnd`
+1. Include resources created by `packageRunBuild` into module (`bnd.bnd`)
+1. Configure JS dependencies in `package.json` (name attribute must match Web-ContextPath in `bnd.bnd`)
+1. Implement React Component
+1. Use `<react:component />` tag to render the component within your JSP
+
+---
+
+# Using Clay Components
+
+## Introduction
+
+* Clay: a set of React based components created and maintained by Liferay
+* Usable in custom React components embedded in JSP
+* TODO: usable in standalone widgets based on React?
 
 ---
 
