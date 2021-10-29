@@ -37,25 +37,6 @@ layout: true
 
 ---
 
-# Tools and Strategies
-
-## Overview
-
-* TODO
-
----
-
-## Challenges
-
-* Limited Control of the DOM
-* Client-Side Routing
-* Interoperation with Liferay JS
-* Coexistence with other frameworks on the page (Senna, jQuery, ...)
-* Multiple React/Angular/Vue applications on one page
-* Multiple instances of the same app on one page
-
----
-
 class: agenda
 
 # .inner[Client-Side Javascript Development]
