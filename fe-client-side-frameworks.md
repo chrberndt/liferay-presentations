@@ -116,7 +116,25 @@ layout: true
 
 # Creating a Liferay React Widget Module
 
-## Retrieve a List of Blog Posts
+1. Create a React app with `create-react-app`
+
+  ```bash
+  npx create-react-app my-app
+  ```
+1. Adapt the React app to Liferay with `yo liferay-js:adapt`
+
+  ```bash
+  yo liferay-js:adapt
+  ```
+
+.footnote[
+1. [https://create-react-app.dev](https://create-react-app.dev)
+1. [https://github.com/liferay/liferay-frontend-projects/blob/master/maintenance/projects/js-toolkit/docs/How-to-adapt-most-popular-frameworks-projects.md](https://github.com/liferay/liferay-frontend-projects/blob/master/maintenance/projects/js-toolkit/docs/How-to-adapt-most-popular-frameworks-projects.md)
+]
+
+---
+
+# Example: Retrieve a List of Blog Posts
 
 * See: [https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop](https://github.com/lgdd/lfug20-react-workshop#lfug-20-meetup--react-workshop)
 
