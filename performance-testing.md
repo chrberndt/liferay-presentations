@@ -117,13 +117,30 @@ layout: true
 
 # Tooling
 
-* jMeter
+* JMeter
 * Glowroot
 * Grinder
 
-
 .footnote[
 ]
+
+---
+
+# JMeter
+
+## Basic Setup on localhost
+
+1. Download latest JMeter from [https://jmeter.apache.org/download_jmeter.cgi](https://jmeter.apache.org/download_jmeter.cgi)
+1. Extract and run GUI with `./JMETER_HOME/bin/jmeter`
+1. Create a new *Test Plan* based on the *Recording* Template
+
+  File → Templates → Recording
+
+1. Fill in your parameters:
+
+  hostToRecord: *localhost*</br>
+  recordingOutputFile: *recording.xml* (default)</br>
+  schemeToRecord: http
 
 ---
 
