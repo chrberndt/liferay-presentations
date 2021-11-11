@@ -106,10 +106,11 @@ layout: true
 
 # Tooling
 
+* `yarn` - make sure to use `yarn` to manage your npm dependencies, see: [https://liferay.dev/blogs/-/blogs/liferay-gradle-yarn-workspaces](https://liferay.dev/blogs/-/blogs/liferay-gradle-yarn-workspaces)
 * `deployFast` (see: https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task)
 
 .footnote[
-  https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task
+  [https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task](https://github.com/liferay/liferay-frontend-projects/blob/master/guidelines/dxp/environment.md#enabling-the-deployfast-task)
 ]
 
 ---
