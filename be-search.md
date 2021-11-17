@@ -99,6 +99,19 @@ layout: true
 
 ---
 
+# Elasticsearch
+
+## Explore ES
+
+```bash
+# Check your connection to ES
+curl -X GET localhost:9200
+
+# Query your index
+curl -X GET localhost:9200/_search
+```
+---
+
 # Kibana
 
 ## Setup 
