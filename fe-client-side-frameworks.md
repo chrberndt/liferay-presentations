@@ -69,6 +69,14 @@ layout: true
 
 ---
 
+# Client Side JS Frameworks
+
+## Examples Provided by Liferay
+
+* https://liferay.github.io/liferay-frontend-projects/
+
+---
+
 class: agenda
 
 # .inner[Client Side Frameworks]
