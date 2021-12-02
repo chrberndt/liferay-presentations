@@ -19,7 +19,7 @@ class: impact
 christian.berndt@liferay.com
 
 .date[
-  Frankfurt am Main, 20 November 2020
+  Frankfurt am Main, 20 November 2022
 ]
 
 ---
@@ -30,7 +30,6 @@ class: agenda
 
 .items[
 * .active[Scrum Definition]
-* Uses of Scrum
 * Scrum Theory
 * Scrum Values
 * The Scrum Team
@@ -77,43 +76,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* .active[Uses of Scrum]
-* Scrum Theory
-* Scrum Values
-* The Scrum Team
-* Scrum Events
-* Scrum Artifacts
-* Artifact Transparency
-]
-
----
-
-title: Scrum
-layout: true
-
-###.breadcrumbs[Scrum › Uses of Scrum]
-
-.bottom-bar[
-  {{title}}
-]
-
----
-
-# Uses of Scrum 
-
-## Overview
-
-* TODO
-
----
-
-class: agenda
-
-# .inner[Scrum]
-
-.items[
-* Scrum Definition
-* Uses of Scrum
 * .active[Scrum Theory]
 * Scrum Values
 * The Scrum Team
@@ -149,7 +111,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* Uses of Scrum
 * Scrum Theory
 * .active[Scrum Values]
 * The Scrum Team
@@ -185,7 +146,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* Uses of Scrum
 * Scrum Theory
 * Scrum Values
 * .active[The Scrum Team]
@@ -221,7 +181,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* Uses of Scrum
 * Scrum Theory
 * Scrum Values
 * The Scrum Team
@@ -257,7 +216,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* Uses of Scrum
 * Scrum Theory
 * Scrum Values
 * The Scrum Team
@@ -293,7 +251,6 @@ class: agenda
 
 .items[
 * Scrum Definition
-* Uses of Scrum
 * Scrum Theory
 * Scrum Values
 * The Scrum Team
