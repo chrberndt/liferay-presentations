@@ -53,18 +53,18 @@ layout: true
 
 # Scrum Definition 
 
-## Overview
-
-* "Scrum is a framework for developing, delivering, and sustaining complex products."
-* "Scrum is a process framework."
+> In a nutshell, Scrum requires a *Scrum Master* to foster an environment where:
+> 1. A *Product Owner* orders the work for a complex problem into a Product Backlog.
+> 1. The *Scrum Team* turns a selection of the work into an *Increment of value* during a *Sprint*.
+> 1. The *Scrum Team* and its stakeholders inspect the results and adjust for the next Sprint.
+> 1. *Repeat*
 
 .footnote[
-  [The Scrum Guide 2017, p. 3](https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100)
 ] 
 
 ???
 
-## Overview
+## Overview (Speaker Note)
 
 * TODO
 
