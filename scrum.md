@@ -35,7 +35,6 @@ class: agenda
 * The Scrum Team
 * Scrum Events
 * Scrum Artifacts
-* Artifact Transparency
 ]
 
 ---
@@ -51,7 +50,7 @@ layout: true
 
 ---
 
-# Scrum Definition 
+# Scrum Definition
 
 > In a nutshell, Scrum requires a *Scrum Master* to foster an environment where:
 > 1. A *Product Owner* orders the work for a complex problem into a Product Backlog.
@@ -60,7 +59,7 @@ layout: true
 > 1. *Repeat*
 
 .footnote[
-] 
+]
 
 ???
 
@@ -81,7 +80,6 @@ class: agenda
 * The Scrum Team
 * Scrum Events
 * Scrum Artifacts
-* Artifact Transparency
 ]
 
 ---
@@ -97,11 +95,13 @@ layout: true
 
 ---
 
-# Scrum Theory 
+# Scrum Theory
 
-## Overview
+## The Empirical Scrum Pillars
 
-* TODO
+* Transparency
+* Inspection
+* Adaptation
 
 ---
 
@@ -116,7 +116,6 @@ class: agenda
 * The Scrum Team
 * Scrum Events
 * Scrum Artifacts
-* Artifact Transparency
 ]
 
 ---
@@ -134,9 +133,13 @@ layout: true
 
 # Scrum Values
 
-## Overview
+> Successful use of Scrum depends on people becoming more proficient in living five values:
 
-* TODO
+1. Commitment
+1. Focus
+1. Openness
+1. Respect
+1. Courage
 
 ---
 
@@ -151,7 +154,6 @@ class: agenda
 * .active[The Scrum Team]
 * Scrum Events
 * Scrum Artifacts
-* Artifact Transparency
 ]
 
 ---
@@ -167,9 +169,86 @@ layout: true
 
 ---
 
-# The Scrum Team 
+# The Scrum Team
 
 ## Overview
+
+* Introduction
+* Developers
+* Product Owner
+* Scrum Master
+
+---
+
+# Introduction
+
+## General Scrum Team Characteristics
+
+* Small, no sub-teams or hierarchies
+* Cross-functional, self-managing
+* Typically 10 or fewer people
+* Responsible for all product-related activities
+
+---
+
+# Developers
+
+## Accountabilities
+
+* Creating a plan for the *Sprint*, the *Spring Backlog*;
+* Instilling quality by adhering to a *Definition of Done*;
+* Adapting their plan each day toward the *Sprint Goal*;
+* Holding each other accountable as professionals.
+
+---
+
+# Product Owner
+
+## Accountabilities
+
+* Maximizing the value of the product resulting from the work of the Scrum Team
+* Effective *Product Backlog* management
+
+---
+
+# Product Owner
+
+## Product Backlog management tasks
+
+* Developing and explicitly communicating the *Product Goal*
+* Creating and clearly communicating *Product Backlog* items
+* Ordering *Product Backlog* items
+* Ensuring that the *Product Backlog* is transparent, visible and understood
+
+---
+
+# Scrum Master
+
+## Accountabilities
+
+* TODO
+
+---
+
+# Scrum Master
+
+## Ways of Serving the Scrum Team
+
+* TODO
+
+---
+
+# Scrum Master
+
+## Ways of Serving the Product Owner
+
+* TODO
+
+---
+
+# Scrum Master
+
+## Ways of Serving the Organization
 
 * TODO
 
@@ -186,7 +265,6 @@ class: agenda
 * The Scrum Team
 * .active[Scrum Events]
 * Scrum Artifacts
-* Artifact Transparency
 ]
 
 ---
@@ -202,11 +280,15 @@ layout: true
 
 ---
 
-# Scrum Events 
+# Scrum Events
 
 ## Overview
 
-* TODO
+1. The Sprint
+1. Spring Planning
+1. Daily Scrum
+1. Spring Review
+1. Spring Retrospective
 
 ---
 
@@ -221,7 +303,6 @@ class: agenda
 * The Scrum Team
 * Scrum Events
 * .active[Scrum Artifacts]
-* Artifact Transparency
 ]
 
 ---
@@ -237,46 +318,14 @@ layout: true
 
 ---
 
-# Scrum Artifacts 
+# Scrum Artifacts
 
 ## Overview
 
-* TODO
-
----
-
-class: agenda
-
-# .inner[Scrum]
-
-.items[
-* Scrum Definition
-* Scrum Theory
-* Scrum Values
-* The Scrum Team
-* Scrum Events
-* Scrum Artifacts
-* .active[Artifact Transparency]
-]
-
----
-
-title: Scrum
-layout: true
-
-###.breadcrumbs[Scrum › Artifact Transparency]
-
-.bottom-bar[
-  {{title}}
-]
-
----
-
-# Artifact Transparency 
-
-## Overview
-
-* TODO
+* Introduction
+* Product Backlog
+* Sprint Backlog
+* Increment
 
 ---
 
