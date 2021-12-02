@@ -29,7 +29,7 @@ class: agenda
 # .inner[Agenda]
 
 .items[
-* .active[Definition of Scrum]
+* .active[Scrum Definition]
 * Uses of Scrum
 * Scrum Theory
 * Scrum Values
@@ -44,7 +44,7 @@ class: agenda
 title: Scrum
 layout: true
 
-###.breadcrumbs[Scrum › Definition of Scrum]
+###.breadcrumbs[Scrum › Scrum Definition]
 
 .bottom-bar[
   {{title}}
@@ -52,7 +52,7 @@ layout: true
 
 ---
 
-# Definition of Scrum 
+# Scrum Definition 
 
 ## Overview
 
@@ -76,7 +76,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * .active[Uses of Scrum]
 * Scrum Theory
 * Scrum Values
@@ -112,7 +112,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * .active[Scrum Theory]
 * Scrum Values
@@ -148,7 +148,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * Scrum Theory
 * .active[Scrum Values]
@@ -184,7 +184,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * Scrum Theory
 * Scrum Values
@@ -220,7 +220,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * Scrum Theory
 * Scrum Values
@@ -256,7 +256,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * Scrum Theory
 * Scrum Values
@@ -292,7 +292,7 @@ class: agenda
 # .inner[Scrum]
 
 .items[
-* Definition of Scrum
+* Scrum Definition
 * Uses of Scrum
 * Scrum Theory
 * Scrum Values
