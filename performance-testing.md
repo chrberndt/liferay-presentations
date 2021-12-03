@@ -1,4 +1,4 @@
-title: Performance Testing 
+title: Performance Testing
 class: animation-fade
 layout: true
 
@@ -11,7 +11,7 @@ class: impact
 
 .logo[<img src="images/liferay-waffle.svg">]
 
-## Performance Testing 
+## Performance Testing
 
 # {{title}}
 
@@ -33,7 +33,7 @@ class: agenda
 
 ---
 
-title: Performance Testing 
+title: Performance Testing
 layout: true
 
 ###.breadcrumbs[Performance Testing › Overview]
@@ -48,8 +48,17 @@ layout: true
 
 ## Introduction
 
-* Load Testing: determine the maximum number of requests / users / etc. a server can handle
-* Performance Testing: determine how well a server handles a  
+* Load Testing:
+* Stress Testing: determine the maximum number of requests / users / etc. a server can handle
+
+---
+
+# Performance Testing
+
+## Subtasks
+
+* Load Testing
+* Stress Testing
 
 ---
 
@@ -58,7 +67,7 @@ layout: true
 ## Prerequisities
 
 * Define the number of requests a server is supposed to handle (within a given period)
-* Determine relevant usage peaks 
+* Determine relevant usage peaks
 * Determine relevant usage patterns / page flows, e.g.
   * Transaction centric scenarios (Online banking, flight booking etc.)
   * Collaboration centric scenarios (Intranet)
@@ -74,7 +83,7 @@ layout: true
 * 10,000 sites with 50% of the sites having at least 5 children.
 * 4 million message forum threads and posts.
 * 100,000 blog entries and 1 million comments.
-* 100,000 wiki pages. 
+* 100,000 wiki pages.
 
 .footnote[
   From Liferay DXP Performance Benchmark Study of Liferay DXP 7.3, p. 1.
@@ -82,15 +91,13 @@ layout: true
 
 ---
 
-
-
 class: agenda
 
 # .inner[Performance Testing]
 
 .items[
 1. Overview
-1. .active[Load Testing] 
+1. .active[Load Testing]
 1. Pagespeed
 ]
 
@@ -107,7 +114,7 @@ layout: true
 
 ---
 
-# Load Testing 
+# Load Testing
 
 ## Overview
 
@@ -165,7 +172,7 @@ layout: true
 
 ---
 
-# Pagespeed 
+# Pagespeed
 
 ## Overview
 
@@ -176,5 +183,5 @@ layout: true
 # Tools
 
 * https://developers.google.com/speed/pagespeed/insights
-* https://www.webpagetest.org/ 
+* https://www.webpagetest.org/
 
