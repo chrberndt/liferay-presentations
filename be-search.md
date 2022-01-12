@@ -107,8 +107,17 @@ layout: true
 # Check your connection to ES
 curl -X GET localhost:9200
 
+# List your indices
+curl -s localhost:9200/_cat/indices
+
+# List field mappings of an index
+curl localhost:9200/liferay-20097/_mapping?pretty
+
 # Query your index
-curl -X GET localhost:9200/_search
+curl localhost:9200/liferay-20097/_search?pretty
+
+# Filter by field
+curl localhost:9200/_search?q=entryClassName:com.liferay.journal.model.JournalArticle
 ```
 ---
 
