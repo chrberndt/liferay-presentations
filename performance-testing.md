@@ -48,7 +48,7 @@ layout: true
 
 ## Introduction
 
-* Load Testing:
+* Load Testing: verify that a server can handle a given number requests / users / queries / etc.
 * Stress Testing: determine the maximum number of requests / users / etc. a server can handle
 
 ---
