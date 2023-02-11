@@ -6,7 +6,7 @@ A collection of presentations to various Liferay related topics.
 The slides are based on *backslide 2.4.0* (see: https://github.com/sinedied/backslide)
 
 ```
-npm i backslide
+npm i -g backslide
 ```
 
 ## How to Use and Develop
