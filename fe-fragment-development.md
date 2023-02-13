@@ -18,7 +18,7 @@ class: impact
 christian.berndt@liferay.com
 
 .date[
-  Frankfurt am Main, 20 November 2021
+  Vienna, 13 February 2023
 ]
 
 ---
