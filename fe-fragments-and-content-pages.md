@@ -1,4 +1,4 @@
-title: Fragments and Content Pages
+title: Content Pages and Fragments
 class: animation-fade
 layout: true
 
@@ -29,14 +29,17 @@ class: agenda
 
 .items[
 1. .active[Introduction]
+1. Using Fragments
+1. Fragment Compositions
+1. Developing Fragments
 ]
 
 ---
 
-title: Fragments And Content Pages 
+title: Content Pages and Fragments
 layout: true
 
-###.breadcrumbs[Fragments and Content Pages]
+###.breadcrumbs[Content Pages and Fragments]
 
 .bottom-bar[
   {{title}}
@@ -49,16 +52,16 @@ layout: true
 .col-5[
 ## Content Pages: General Concepts
 * First introduced in Liferay 7.1
-* Page centered content managment (in addition to Asset based) 
-* Composed of Fragments
+* Page centered content managment (in addition to Asset based)
+* Composed of Fragments and / or Widgets
 ]
 
-.col-2[
+.col-1[
   &nbsp;
 ]
 
-.col-5[
-  TODO: Landing page example
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/introduction-content-page.png" width="95%">]
 ]
 
 .footnote[
@@ -67,18 +70,13 @@ layout: true
 
 ???
 
-## First introduced in Liferay 7.1
-
-* since 7.3 a level of maturity where it can in fact be considered as production ready
-
-## Page centered content management
-
-* in a way complementary to Liferay's traditional, asset based approach to content management (Web Content Display and Asset Publisher Portlets, Web Content Articles and Document and Media Files)
-
-## Composed of so called Fragments
-
-* easy to use page blocks which can easily be deployed to a page via drag and drop 
- 
+* *First introduced in Liferay 7.1*
+  * since 7.3 a level of maturity where it can in fact be considered as production ready
+* *Page centered content management*
+  * in a way complementary to Liferay's traditional, asset based approach to content management (Web Content Display and Asset Publisher Portlets, Web Content Articles and Document and Media Files)
+* *Composed of so called Fragments*
+  * easy to use page blocks which can easily be deployed to a page via drag and drop
+  * Widgets (Portlets) supported as well
 ---
 
 # Introduction
@@ -87,31 +85,32 @@ layout: true
 
 * View and Draft
 * Inline Editing of Content
+* Support for Experiences
 * Support of Workflows
- 
+
 ???
 
-## View and Draft
-
-* Every content page has a draft mode which allows for preparing and editing page content without publishing the changes immediately (like for widget pages)  
-
-## Inline Editing of Content
-
-* provides immediate feedback to the editor and a true WYSIWYG authoring experience 
-
-## Support for Workflows
-
-* Content pages can be configured to support workflows which model approval or review processes
+* *View and Draft*
+  * Every content page has a draft mode which allows for preparing and editing page content without publishing the changes immediately (like for widget pages)
+* *Inline Editing of Content*
+  * provides immediate feedback to the editor and a true WYSIWYG authoring experience
+* *Support for Experiences*
+  * Content pages support the concept of so called "Experiences" - Liferay's term for personalized content.
+  * Display specific parts of a page according to configurable criteria, e.g. Geo location, Language Settings, etc.
+* *Support for Workflows*
+  * Content pages can be configured to support workflows which model approval or review processes
 
 ---
 
-# Introduction 
+# Introduction
 
 ## Fragment Examples
 
 .col-4[
   .center[<img src="images/front-end-development/slider-fragment.png" width="95%">]
+]
 
+.col-4[
   .center[<img src="images/front-end-development/features-fragment.png" width="95%">]
 ]
 
@@ -121,7 +120,29 @@ layout: true
 
 ---
 
-# How it Works 
+# Introduction
+
+.col-5[
+
+## Exercise: Hello Content Page
+
+1. Create an empty page
+1. Define the page structure by adding OOTB fragments
+1. Edit page content
+1. Publish the draft
+
+]
+
+.col-1[
+  &nbsp;
+]
+
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/introduction-hello-content-page.png" width="95%">]
+]
+---
+
+# How it Works
 
 ## A Simple Example: Banner Center
 
@@ -162,7 +183,7 @@ layout: true
 
 ---
 
-# How it Works 
+# How it Works
 
 ## A Simple Example: Banner Center
 
@@ -170,15 +191,15 @@ layout: true
 
 ---
 
-# How it Works 
+# How it Works
 
 ## A Simple Example: Banner Center
 
-* TODO: can be edited as follows 
+* TODO: can be edited as follows
 
 ---
 
-# Tooling 
+# Tooling
 
 ## Setup Your Environment
 
@@ -188,7 +209,7 @@ layout: true
 
 ---
 
-# Tooling 
+# Tooling
 
 ## Fragments Toolkit Capabilities
 
@@ -206,7 +227,7 @@ layout: true
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 .col-6[
 
@@ -259,7 +280,7 @@ Done in 49.25s.
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 .col-6[
 
@@ -316,7 +337,7 @@ Connection successful
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Anatomy of a Fragments Project
 
@@ -349,7 +370,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Anatomy of a Fragments Project: `package.json`
 
@@ -388,7 +409,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Propagating Page Fragment Changes
 
@@ -407,7 +428,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Anatomy of a Fragment: `configuration.json`
 
@@ -462,7 +483,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Anatomy of a Fragment: `index.html`
 
@@ -513,7 +534,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Using Fragment Compositions
 
@@ -525,7 +546,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Best Practices
 
@@ -533,7 +554,7 @@ sample-liferay-fragments/
 
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Using Freemarker
 
@@ -545,7 +566,7 @@ sample-liferay-fragments/
 ]
 ---
 
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Using Freemarker: An Example
 
@@ -565,7 +586,7 @@ Display an add button only if the Content Page is in *edit* mode.
 
 
 ---
-# Fragments and Content Pages
+# Content Pages and Fragments
 
 ## Manage Style Settings (7.3+)
 
