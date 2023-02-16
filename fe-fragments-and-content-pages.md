@@ -29,8 +29,7 @@ class: agenda
 
 .items[
 1. .active[Introduction]
-1. Using Fragments
-1. Fragment Compositions
+1. Visual Fragment Composition
 1. Developing Fragments
 ]
 
@@ -140,9 +139,63 @@ layout: true
 .col-6[
   .center[<img src="images/fe-content-pages-and-fragments/introduction-hello-content-page.png" width="95%">]
 ]
+
 ---
 
-# How it Works
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Introduction
+1. .active[Visual Fragment Composition]
+1. Developing Fragments
+]
+
+---
+
+# Visual Fragment Composition
+
+## TODO
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Introduction
+1. Visual Fragment Composition
+1. .active[Developing Fragments]
+]
+
+---
+
+# Developing Fragments
+
+## Tooling
+
+* Built-in Fragment Editor
+* External Fragment Toolkit
+
+???
+
+* *Built-in Fragment Editor*
+  * Primarily meant to test modifications
+* *External Fragment Toolkit*
+  * Node based CLI Toolkit
+  * Based on yeoman, a popular scaffolding tool in the node world
+
+---
+
+# Developing Fragments
+
+## Exercise: Creating a Simple Fragment with
+
+---
+
+# Developing Fragments
 
 ## A Simple Example: Banner Center
 
@@ -183,7 +236,7 @@ layout: true
 
 ---
 
-# How it Works
+# Developing Fragments
 
 ## A Simple Example: Banner Center
 
@@ -191,7 +244,7 @@ layout: true
 
 ---
 
-# How it Works
+# Developing Fragments
 
 ## A Simple Example: Banner Center
 
@@ -199,7 +252,7 @@ layout: true
 
 ---
 
-# Tooling
+# Developing Fragments
 
 ## Setup Your Environment
 
@@ -209,7 +262,17 @@ layout: true
 
 ---
 
-# Tooling
+# Developing Fragments
+
+## Exercise: Setup the Fragment Toolkit
+
+1. Setup Node (preferably by means of a version manager, e.g. nvm)
+1. Install required packages
+1. Create your first fragment project with `yo`
+
+---
+
+# Developing Fragments
 
 ## Fragments Toolkit Capabilities
 
