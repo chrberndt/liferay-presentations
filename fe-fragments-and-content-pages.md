@@ -156,7 +156,43 @@ class: agenda
 
 # Visual Fragment Composition
 
-## TODO
+## General Characteristics 
+
+* Part of Liferay's Low Code / No Code approach
+* Meant to empower Business Users
+* Meant to increase productivity and agility
+
+???
+
+* *Why create custom fragments?*
+  * OOTB Fragments might not cover your team's communication needs
+* *Why visually compose fragments?*
+  * Enable Business UsersBusiness Users  to tailor fragments according to their needs
+* *Meant to increase productivity and agility*
+  * Adjusting styles does not necessarily require development resources
+
+---
+
+# Visual Fragment Composition
+
+.col-5[
+## Exercise: Compose a Video Card
+
+1. Create a Custom Fragment Set
+1. Create an Empty Content Page
+1. Compose Your Custom Fragment
+1. Style the Fragment Components
+1. Save the Video Card 
+1. Test the Video Card  
+]
+
+.col-1[
+  &nbsp;
+]
+
+.col-4[
+  .center[<img src="images/fe-content-pages-and-fragments/exercise-video-card.png" width="95%">]
+]
 
 ---
 
@@ -168,6 +204,77 @@ class: agenda
 1. Introduction
 1. Visual Fragment Composition
 1. .active[Developing Fragments]
+]
+
+---
+
+# Developing Fragments
+
+## General Characteristics
+
+* Self contained blocks of HTML, CSS, and Javascript
+* Embedded "Editable Elements"
+* Support for "Drop Zones"
+* Configurable
+* Support for Freemarker
+
+---
+
+# Developing Fragments
+
+## Anatomy of a Fragment
+
+.col-5[
+
+Fragment code (legacy syntax)
+
+```html
+<div class="sample-fragment">
+  <h1>
+*    <lfr-editable id="title" type="text">
+      Sample fragment
+*    </lfr-editable>
+  </h1>
+</div>
+```
+
+Fragment code (new syntax)
+```html
+<div class="sample-fragment-with-new-editables">  
+*  <h1 data-lfr-editable-id="title" 
+*      data-lfr-editable-type="text">
+    Sample fragment with new editables
+  </h1>
+</div>
+```
+]
+
+.col-2[
+  &nbsp;
+]
+
+.col-5[
+Rendered as 
+```html
+<div class="sample-fragment">
+  <h1>
+    <div>
+      Sample fragment
+    </div>
+  </h1>
+</div>
+```
+
+Rendered as
+
+```html
+<div class="sample-fragment-with-new-editables">  
+  <h1 data-lfr-editable-id="title" 
+      data-lfr-editable-type="text">
+    Sample fragment with new editables
+  </h1>
+</div>
+```
 ]
 
 ---
@@ -191,64 +298,21 @@ class: agenda
 
 # Developing Fragments
 
-## Exercise: Creating a Simple Fragment with
+.col-5[ 
+## Exercise: Using the Built-in Editor
+  1. Implement the HTML
+  1. Style with CSS
+  1. Add Javascript
+  1. Deploy and Test
+]
 
----
+.col-1[
+  &nbsp;
+]
 
-# Developing Fragments
-
-## A Simple Example: Banner Center
-
-```html
-<div class="banner py-6 py-md-8 text-white text-break" data-lfr-background-image-id="banner">
-  <div class="container my-lg-6">
-    <div class="row">
-      <div class="col-12 col-md-8 col-xl-6">
-        <h1
-*          data-lfr-editable-id="01-title"
-*          data-lfr-editable-type="rich-text"
-        >
-          Banner Title Example
-        </h1>
-
-*        <div class="mb-4 lead" data-lfr-editable-id="02-subtitle" data-lfr-editable-type="rich-text">
-          <p>
-            This is a simple banner component that you can use when
-            you need extra attention to featured content or
-            information.
-          </p>
-        </div>
-
-        <a
-          class="btn btn-primary"
-*          data-lfr-editable-id="03-link"
-*          data-lfr-editable-type="link"
-*          href=""
-*          id="fragment-${fragmentEntryLinkNamespace}-03-link"
-        >
-          Go Somewhere
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
----
-
-# Developing Fragments
-
-## A Simple Example: Banner Center
-
-* TODO: renders as
-
----
-
-# Developing Fragments
-
-## A Simple Example: Banner Center
-
-* TODO: can be edited as follows
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/exercise-built-in-editor.png" width="95%">]
+]
 
 ---
 
@@ -397,261 +461,4 @@ Connection successful
 
 ]
 
-
----
-
-# Content Pages and Fragments
-
-## Anatomy of a Fragments Project
-
-.col-6[
-
-```bash
-sample-liferay-fragments/
-├── node_modules
-├── package.json
-├── README.md
-├── src
-│   └── custom-fragment-collection
-│       ├── collection.json
-│       └── keyvisual
-│           ├── configuration.json
-│           ├── fragment.json
-│           ├── index.html
-│           ├── main.js
-│           └── styles.css
-└── yarn.lock
-```
-
-| | | |
-|-|-|-|
-|`package.json`|&nbsp;&nbsp;| Node package configuration |
-|`src`| | Sources of the fragments project |
-|`yarn.lock`| | Lock file for yarn (exact versions of declared dependencies) |
-
-]
-
----
-
-# Content Pages and Fragments
-
-## Anatomy of a Fragments Project: `package.json`
-
-.col-9[
-
-```json
-{
-  "name": "sample-liferay-fragments",
-  "description": "Liferay Fragments project",
-  "version": "1.0.0",
-
-  "engines": {
-    "node": ">= 8.0.0",
-    "npm": ">= 6.0.0"
-  },
-
-  "keywords": [
-    "liferay",
-    "liferay-fragments"
-  ],
-
-  "scripts": {
-    "add-collection": "yo liferay-fragments:collection",
-    "add-fragment": "yo liferay-fragments:fragment",
-    "add-fragment-composition": "yo liferay-fragments:fragment-composition",
-    "add-page-template": "yo liferay-fragments:page-template",
-    "compress": "yo liferay-fragments:compress",
-    "export": "yo liferay-fragments:export",
-    "import": "yo liferay-fragments:import",
-    "import:watch": "yo liferay-fragments:import --watch",
-    "preview": "yo liferay-fragments:preview"
-  }
-}
-```
-]
-
----
-
-# Content Pages and Fragments
-
-## Propagating Page Fragment Changes
-
-.col-6[
-### Manually Propagating Page Fragment Changes
-]
-
-.col-6[
-### Automatically Propagating Page Fragment Changes
-]
-
-
-.footnote[
-  https://learn.liferay.com/dxp/7.x/en/site-building/displaying-content/using-fragments/propagating-page-fragment-changes.html#manually-propagating-page-fragment-changes
-]
-
----
-
-# Content Pages and Fragments
-
-## Anatomy of a Fragment: `configuration.json`
-
-.col-6[
-```json
-{
-  "fieldSets": [
-    {
-      "fields": [
-        {
-          "dataType": "int",
-          "defaultValue": "3",
-          "description": "number-of-slides",
-          "label": "Number Of Slides",
-          "name": "numberOfSlides",
-          "type": "text",
-          "typeOptions": {
-            "validation": {
-              "min": 1,
-              "type": "number"
-            }
-          }
-        },
-        {
-          "dataType": "object",
-          "label": "text-color",
-          "name": "textColor",
-          "type": "colorPalette"
-        }
-      ]
-    }
-  ]
-}
-```
-]
-
-.col-6[
-* Defined in JSON
-* Supported input types:
-  * checkbox
-  * colorPalette
-  * itemSelector
-  * select
-  * text
-* Stored as Freemarker context object
-* Processed with Freemarker
-]
-
-.footnote[
-  https://learn.liferay.com/dxp/7.x/en/site-building/developer-guide/reference/fragments/fragment-configuration-types-reference.html
-]
-
----
-
-# Content Pages and Fragments
-
-## Anatomy of a Fragment: `index.html`
-
-.col-6[
-* TODO: add source
-]
-
-.col-6[
-* Define markup
-* Define editable areas
-* Process configuration
-]
-
----
-
-# Fragement Development
-
-## Anatomy of a Fragment: `index.html`
-
-### Defining Editable Areas
-
-.col-6[
-```xml
-<lfr-editable id="image_id" type="image">
-  <img src="placeholder.png" alt="Placeholder">
-</lfr-editable>
-
-<lfr-editable id="link_id" type="link">
-  <a href="#placeholder" target="_blank">Go to placeholder</a>
-</lfr-editable>
-
-<lfr-editable id="html_id" type="html">
-  <h1>Placeholder</h1>
-</lfr-editable>
-
-<lfr-editable id="text_id" type="text">Placeholder</lfr-editable>
-
-<lfr-editable id="rich_text_id" type="rich-text">
-  Placeholder
-</lfr-editable>
-```
-]
-.col-6[
-```html
-<!-- TODO: Process configurations with Freemarker -->
-```
-]
-
----
-
-# Content Pages and Fragments
-
-## Using Fragment Compositions
-
-* TODO
-
-.footnote[
-  See: https://learn.liferay.com/dxp/7.x/en/site-building/creating-pages/building-and-managing-content-pages/building-content-pages.html#saving-a-fragment-composition
-]
-
----
-
-# Content Pages and Fragments
-
-## Best Practices
-
-* Use `${fragmentEntryLinkNamespace}` in html `id` attributes
-
----
-
-# Content Pages and Fragments
-
-## Using Freemarker
-
-* Freemarker supported: https://issues.liferay.com/browse/LPS-95736
-* Requires alternative Freemarker syntax, see: https://freemarker.apache.org/docs/dgui_misc_alternativesyntax.html
-
-.footnote[
-  https://help.liferay.com/hc/en-us/articles/360028726832-Page-Fragments
-]
----
-
-# Content Pages and Fragments
-
-## Using Freemarker: An Example
-
-.col-8[
-```Freemarker
-[#assign req = request.getRequest()]
-[#assign originalRequest = portalUtil.getOriginalServletRequest(req)]
-
-[#if originalRequest.getParameter("p_l_mode")??]
-  [#if originalRequest.getParameter("p_l_mode") == "edit"]
-    <a class="btn btn-lg btn-primary">Add Article</a>
-  [/#if]
-[/#if]
-```
-Display an add button only if the Content Page is in *edit* mode.
-]
-
-
----
-# Content Pages and Fragments
-
-## Manage Style Settings (7.3+)
-
-* See: https://loop.liferay.com/home/-/loop/feed/21482877
 
