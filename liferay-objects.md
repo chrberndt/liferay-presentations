@@ -29,9 +29,8 @@ class: agenda
 
 .items[
 1. .active[Introduction]
-1. Concepts and Terms
 1. Live Demo
-1. Questions and Discussion 
+1. Summary and Discussion 
 ]
 
 ???
@@ -90,10 +89,12 @@ layout: true
 
 .col-5[
 
-## Liferay Objects: An Example 
+## How Do You Build Applications with Objects? 
 
-* Visually define a business object 
-
+* Define data fields (attributes) of your business objects
+* Add relationships between different types of objects
+* Define actions that are triggered under specific conditions
+* Define layouts and views for the user interface
 ]
 
 .col-1[
@@ -115,9 +116,12 @@ layout: true
 
 .col-5[
 
-## Liferay Objects: An Example 
+## Common Use Cases and Scenarios 
 
-* Visually define the user interface
+* Event Registration (Customer / Employee Portal)
+* Time Off Request (Employee Portal)
+* Repair Request (Customer Portal)
+* Warranty Claim (Customer Portal)
 
 ]
 
@@ -131,38 +135,23 @@ layout: true
 
 ---
 
-class: agenda
+# Introduction
 
-# .inner[Agenda]
+.col-5[
 
-.items[
-1. Introduction
-1. .active[Concepts and Terms]
-1. Live Demo
-1. Questions and Discussion 
+## Miscellaneous 
+
+* Fully integrated with Liferay's core frameworks
+
 ]
 
-???
+.col-1[
+  &nbsp;
+]
 
-* TODO
-
----
-
-# Concepts and Terms 
-
-## Low Code / No Code 
-
-* TODO  
-
----
-
-# Concepts and Terms
-
-## Objects Use Cases 
-
-* TODO
-
----
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/introduction-hello-content-page.png" width="95%">]
+]
 
 class: agenda
 
@@ -170,40 +159,9 @@ class: agenda
 
 .items[
 1. Introduction
-1. Concepts and Terms
 1. .active[Live Demo]
-1. Questions and Discussion 
+1. Summary and Discussion 
 ]
-
-???
-
-* TODO
-
----
-
-# Live Demo
-
-## Define the Business Object
-
-1. Open the Objects editor in the Control Panel
-1.  
-
-???
-
-* Liferay ships with a number of preconfigured business objects but what we're interested in is defining a custom object, for example a 
-
-
----
-
-# Live Demo 
-
-## Summary: Objects Capabilities 
-
-*   
-
-???
-
-* TODO
 
 ---
 
@@ -213,12 +171,67 @@ class: agenda
 
 .items[
 1. Introduction
-1. Concepts and Terms
+1. .active[Live Demo]
+1. Summary and Discussion 
+]
+
+---
+
+class: agenda
+
+# .inner[Agenda]
+
+.items[
+1. Introduction
 1. Live Demo
-1. .active[Questions and Discussion]
+1. .active[Summary and Discussion]
 ]
 
 ???
 
 * TODO
+
+---
+
+# Summary and Discussion 
+
+.col-5[
+
+## Objects Capabilities 
+
+* Application development without code and deployment
+* Fully integrated with Liferay's core frameworks
+* Auto generated REST endpoints according to the OpenAPI specification 
+
+]
+
+.col-1[
+  &nbsp;
+]
+
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/introduction-hello-content-page.png" width="95%">]
+]
+
+---
+
+# Summary and Discussion 
+
+.col-5[
+
+## Objects Business Value 
+
+* Reduced time to market
+* Quickly adapt to changing business needs
+* Empower business users to build, deliver, and manage applications
+* Reduce dependency from scarce IT resources
+]
+
+.col-1[
+  &nbsp;
+]
+
+.col-6[
+  .center[<img src="images/fe-content-pages-and-fragments/introduction-hello-content-page.png" width="95%">]
+]
 
